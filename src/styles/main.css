@@ -92,6 +92,7 @@ body {
 
 .panel {
     height: 100%;
+    padding: 0 40px;
     position: relative;
     width: 100%;
 }
@@ -124,6 +125,12 @@ body {
     background: linear-gradient(to right bottom, #333 49%, #000 50%),    linear-gradient(-50deg, #333 16px, #000 0);
 }
 
+p { 
+    margin-bottom: 40px;
+    max-width: 1000px;
+    margin: 0 auto 40px auto;
+}
+
 
 .skew-cc{
     bottom: 0;
@@ -138,6 +145,13 @@ body {
     background: linear-gradient(to left bottom, #333 49%, #000 50%);;
 }
 
+.gallery {
+    display: flex;
+}
+
+.gallery > div {
+    margin-right: 20px;
+}
 
 /*.panel:first-child {
     background: url('../images/pattern-background-dark.jpg');
