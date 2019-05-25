@@ -52,6 +52,7 @@ html {
     width: 100%;
     scroll-behavior: smooth;
 }
+
 body {
     color: #fff;
     font-family: Arial, Helvetica, sans-serif;
@@ -116,10 +117,7 @@ body {
     position: relative;
 }
 
-.grid a, 
-.grid a:link, 
-.grid a:active, 
-.grid a:visited {
+.grid a, .grid a:link, .grid a:active, .grid a:visited {
     color: #fff;
     text-decoration: none;
 }
@@ -142,24 +140,84 @@ body {
 
 .panel {
     height: 100%;
+    position: relative;
     width: 100%;
 }
 
-.panel:nth-child(even){
+.panel::after {
+    content: '';
+    background: url("<svg><polygon points=\"0,0 100,0 100,20\" style=\"fill:black;\"></polygon></svg>");
+    ;
+    height: 100
+}
+
+.panel:nth-child(even) {
     background: #333;
 }
 
-.panel:nth-child(odd){
+.panel:nth-child(odd) {
     background: #000;
 }
 
-.panel:first-child{
-    background: url(6825683b30f8ec288c073bfe9b8d12f1.jpg);
-    background-size: cover;
+.skew-c {
+    bottom: 0;
+    width:100%;
+    height:100px;
+    position:absolute;
+    left:0px;
+    background: linear-gradient(to right bottom, #000 49%, #333 50%),    linear-gradient(-50deg, #333 16px, #000 0);
 }
+
+.panel:nth-child(even) .skew-c {
+    background: linear-gradient(to right bottom, #333 49%, #000 50%),    linear-gradient(-50deg, #333 16px, #000 0);
+}
+
+
+.skew-cc{
+    bottom: 0;
+    width:100%;
+    height:100px;
+    position:absolute;
+    left:0px;
+    background: linear-gradient(to left bottom, #000 49%, #333 50%);
+  }
+
+  .panel:nth-child(even) .skew-cc {
+    background: linear-gradient(to left bottom, #333 49%, #000 50%);;
+}
+
+
+/*.panel:first-child {
+    background: url('../images/pattern-background-dark.jpg');
+    background-size: cover;
+}*/
 
 .panel h2 {
     font-size: 24px;
     text-align: center;
     padding: 40px 0;
+}
+
+.button {
+    background: none;
+    border: 1px solid #fff;
+    border-radius: 100px;
+    cursor: pointer;
+    display: block;
+    height: 100px;
+    position: relative;
+    width: 100px;
+}
+
+.button:hover {
+    border: 1px solid rgb(212, 112, 17);
+}
+
+.button span {
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
