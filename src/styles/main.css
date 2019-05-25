@@ -1,0 +1,116 @@
+html {
+    background: #000;
+    height: 100%;
+    width: 100%;
+    scroll-behavior: smooth;
+}
+body {
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 24px;
+    height: 100%;
+    width: 100%;
+}
+
+.page-title {
+    font-family: 'Anton', sans-serif;
+    font-size: 28vmin;
+    font-weight: bold;
+    padding: 80px 40px;
+    position: relative;
+    max-height: 100%;
+    text-align: right;
+    color: #333;
+}
+
+@supports (background-clip: text) {
+    .page-title {
+        color: transparent;
+        background: url('../images/garden-background.jpg');
+        background-size: cover;
+        background-clip: text;
+    }
+}
+
+@supports (-webkit-background-clip: text) {
+    .page-title {
+        color: transparent;
+        background: url('../images/garden-background.jpg');
+        background-size: cover;
+        background-clip: text;
+        -webkit-background-clip: text;
+    }
+}
+
+@media(max-width: 1600px) {
+    .page-title {
+        font-size: 20vmin;
+    }
+}
+
+.grid {
+    display: flex;
+    flex-direction: column;
+    padding: 80px 40px;
+    position: absolute;
+    z-index: 1000;
+    /* writing-mode: vertical-rl;
+    text-orientation: mixed;*/
+    left: 0;
+    top: 0;
+}
+
+.grid li {
+    font-size: 4vmin;
+    padding: 1vmin 2vmin;
+    position: relative;
+}
+
+.grid a, 
+.grid a:link, 
+.grid a:active, 
+.grid a:visited {
+    color: #fff;
+    text-decoration: none;
+}
+
+.grid a:hover {
+    text-decoration: underline;
+}
+
+@keyframes background-pan {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+.panel {
+    height: 100%;
+    width: 100%;
+}
+
+.panel:nth-child(even){
+    background: #333;
+}
+
+.panel:nth-child(odd){
+    background: #000;
+}
+
+.panel:first-child{
+    background: url('../images/pattern-background-dark.jpg');
+    background-size: cover;
+}
+
+.panel h2 {
+    font-size: 24px;
+    text-align: center;
+    padding: 40px 0;
+}
