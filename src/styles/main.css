@@ -92,9 +92,12 @@ body {
 
 .panel {
     height: 100%;
-    padding: 0 40px;
     position: relative;
     width: 100%;
+}
+
+.panel .inner {
+    padding: 40px;
 }
 
 .panel::after {
