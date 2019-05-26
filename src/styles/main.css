@@ -151,7 +151,22 @@ p {
 .gallery {
 }
 
+.gallery .row {
+    display: flex;
+    width: 100%;
+}
 
+.gallery .row > div {
+    flex: 1;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 1024px){
+    .gallery .row {
+        flex-direction: column;
+    }
+}
 
 /*.panel:first-child {
     background: url('../images/pattern-background-dark.jpg');
@@ -194,22 +209,27 @@ iframe, img {
     height: 300px;
 }
 
-.row {
-    display: flex;
-    width: 100%;
+.image-background {
+    position: relative;
+}
+.image-background a {
+    background-color: rgba(0, 0, 0, 0.85);
+    color: #fff;
+    display: block;
+    position: absolute;
+    padding: 10px;
+    bottom: 0;
+    right: 0;
 }
 
-.row > div {
-    flex: 1;
-    margin-right: 20px;
-}
+
 
 .pila-background {
     background: url('../images/pila-background.jpg');
     background-size: cover;
     background-position: center;
-    margin: 20px;
     width: 100%;
+    margin: 20px;
     height: 300px;
 }
 
@@ -226,7 +246,6 @@ iframe, img {
     background: url('../images/pattern-background.jpg');
     background-size: cover;
     background-position: center;
-    margin: 20px;
     width: 100%;
     height: 300px;
 }
@@ -236,7 +255,6 @@ iframe, img {
     background: url('../images/unearthed.jpg');
     background-size: cover;
     background-position: center;
-    margin: 20px;
     width: 100%;
     height: 300px;
 }
@@ -245,7 +263,46 @@ iframe, img {
     background: url('../images/funeral-mapper.png');
     background-size: cover;
     background-position: center;
-    margin: 20px;
     width: 100%;
     height: 300px;
+}
+
+.efl-background {
+    background: url('../images/efl-match-center.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 300px;
+}
+
+.royal-london-background {
+    background: url('../images/royal-london.png');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 300px;
+}
+
+.syfy-background {
+    background: url('../images/syfy20.jpg'); /*source: http://picnicstudio.tv/syfy*/
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 300px;
+}
+
+.ghost-background {
+    background: url('../images/ghost-background.jpg'); /*source: http://picnicstudio.tv/syfy*/
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 300px;
+}
+
+.background-top {
+    background-position: center top;
+}
+
+.align-center{
+    text-align: center;
 }

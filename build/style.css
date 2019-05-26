@@ -199,7 +199,22 @@ p {
 .gallery {
 }
 
+.gallery .row {
+    display: flex;
+    width: 100%;
+}
 
+.gallery .row > div {
+    flex: 1;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 1024px){
+    .gallery .row {
+        flex-direction: column;
+    }
+}
 
 /*.panel:first-child {
     background: url('../images/pattern-background-dark.jpg');
@@ -242,22 +257,27 @@ iframe, img {
     height: 300px;
 }
 
-.row {
-    display: flex;
-    width: 100%;
+.image-background {
+    position: relative;
+}
+.image-background a {
+    background-color: rgba(0, 0, 0, 0.85);
+    color: #fff;
+    display: block;
+    position: absolute;
+    padding: 10px;
+    bottom: 0;
+    right: 0;
 }
 
-.row > div {
-    flex: 1;
-    margin-right: 20px;
-}
+
 
 .pila-background {
     background: url(01ad85ff8423a13d0b546f9b906189ac.jpg);
     background-size: cover;
     background-position: center;
-    margin: 20px;
     width: 100%;
+    margin: 20px;
     height: 300px;
 }
 
@@ -274,7 +294,6 @@ iframe, img {
     background: url(6bb26689587d2d43d6ed56365aa123e9.jpg);
     background-size: cover;
     background-position: center;
-    margin: 20px;
     width: 100%;
     height: 300px;
 }
@@ -284,7 +303,6 @@ iframe, img {
     background: url(4f0b487279577a91fb01c91a25f3fed3.jpg);
     background-size: cover;
     background-position: center;
-    margin: 20px;
     width: 100%;
     height: 300px;
 }
@@ -293,7 +311,46 @@ iframe, img {
     background: url(e6d3e3b97281ea7adbe3f5319b44d890.png);
     background-size: cover;
     background-position: center;
-    margin: 20px;
     width: 100%;
     height: 300px;
+}
+
+.efl-background {
+    background: url(66698b86e64ede987533feac8f45c2b2.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 300px;
+}
+
+.royal-london-background {
+    background: url(b13e24fbaf2af1e5787e8c70347841fe.png);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 300px;
+}
+
+.syfy-background {
+    background: url(f6f970d739bc7671ff6c8c4809661bb2.jpg); /*source: http://picnicstudio.tv/syfy*/
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 300px;
+}
+
+.ghost-background {
+    background: url(3c5f1ac5323c26158f72c6da1f004ad4.jpg); /*source: http://picnicstudio.tv/syfy*/
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 300px;
+}
+
+.background-top {
+    background-position: center top;
+}
+
+.align-center{
+    text-align: center;
 }
