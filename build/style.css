@@ -71,7 +71,7 @@ body {
     max-height: 100%;
     text-align: right;
     text-transform: uppercase;
-    color: #333;
+    color: #fff;
 }
 
 @supports (background-clip: text) {
@@ -90,6 +90,41 @@ body {
         background-size: cover;
         background-clip: text;
         -webkit-background-clip: text;
+    }
+}
+
+@supports (-ms-ime-align: auto) {
+    /* Microsoft EdgeV13&14 CSS styles go here */
+    .page-title {
+        background: url(a52962b9743c1f4e501e5c975ed60df4.jpg);
+        background-size: cover;
+        color: #fff;
+        -webkit-background-clip: unset;
+        background-clip: unset
+    }
+    #hero .inner {
+        margin: 0;
+        padding: 0;
+    }
+    #hero .skew-c {
+        display: none;
+    }
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .page-title {
+        background: url(a52962b9743c1f4e501e5c975ed60df4.jpg);
+        background-size: cover;
+        color: #fff;
+        -webkit-background-clip: unset;
+        background-clip: unset
+    }
+    #hero .inner {
+        margin: 0;
+        padding: 0;
+    }
+    #hero .skew-c {
+        display: none;
     }
 }
 
@@ -165,52 +200,51 @@ body {
 
 .skew-c {
     bottom: 0;
-    width:100%;
-    height:100px;
-    position:absolute;
-    left:0px;
-    background: linear-gradient(to right bottom, #000 49%, #333 50%),    linear-gradient(-50deg, #333 16px, #000 0);
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    left: 0px;
+    background: linear-gradient(to right bottom, #000 49%, #333 50%), linear-gradient(-50deg, #333 16px, #000 0);
 }
 
 .panel:nth-child(even) .skew-c {
-    background: linear-gradient(to right bottom, #333 49%, #000 50%),    linear-gradient(-50deg, #333 16px, #000 0);
+    background: linear-gradient(to right bottom, #333 49%, #000 50%), linear-gradient(-50deg, #333 16px, #000 0);
 }
 
-p { 
+p {
     margin-bottom: 40px;
     max-width: 1000px;
     margin: 0 auto 40px auto;
 }
 
-
-.skew-cc{
+.skew-cc {
     bottom: 0;
-    width:100%;
-    height:100px;
-    position:absolute;
-    left:0px;
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    left: 0px;
     background: linear-gradient(to left bottom, #000 49%, #333 50%);
-  }
-
-  .panel:nth-child(even) .skew-cc {
-    background: linear-gradient(to left bottom, #333 49%, #000 50%);;
 }
 
-.gallery {
+.panel:nth-child(even) .skew-cc {
+    background: linear-gradient(to left bottom, #333 49%, #000 50%);
+    ;
 }
+
+.gallery {}
 
 .gallery .row {
     display: flex;
     width: 100%;
 }
 
-.gallery .row > div {
+.gallery .row>div {
     flex: 1;
     margin-right: 20px;
     margin-bottom: 20px;
 }
 
-@media (max-width: 1024px){
+@media (max-width: 1024px) {
     .gallery .row {
         flex-direction: column;
     }
@@ -260,6 +294,7 @@ iframe, img {
 .image-background {
     position: relative;
 }
+
 .image-background a {
     background-color: rgba(0, 0, 0, 0.85);
     color: #fff;
@@ -269,8 +304,6 @@ iframe, img {
     bottom: 0;
     right: 0;
 }
-
-
 
 .pila-background {
     background: url(01ad85ff8423a13d0b546f9b906189ac.jpg);
@@ -297,7 +330,6 @@ iframe, img {
     width: 100%;
     height: 300px;
 }
-
 
 .unearthed-background {
     background: url(4f0b487279577a91fb01c91a25f3fed3.jpg);
@@ -332,7 +364,8 @@ iframe, img {
 }
 
 .syfy-background {
-    background: url(f6f970d739bc7671ff6c8c4809661bb2.jpg); /*source: http://picnicstudio.tv/syfy*/
+    background: url(f6f970d739bc7671ff6c8c4809661bb2.jpg);
+    /*source: http://picnicstudio.tv/syfy*/
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -340,7 +373,8 @@ iframe, img {
 }
 
 .ghost-background {
-    background: url(3c5f1ac5323c26158f72c6da1f004ad4.jpg); /*source: http://picnicstudio.tv/syfy*/
+    background: url(3c5f1ac5323c26158f72c6da1f004ad4.jpg);
+    /*source: http://picnicstudio.tv/syfy*/
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -351,6 +385,6 @@ iframe, img {
     background-position: center top;
 }
 
-.align-center{
+.align-center {
     text-align: center;
 }
