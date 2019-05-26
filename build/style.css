@@ -75,28 +75,51 @@ body {
 }
 
 @supports (background-clip: text) {
-    .page-title {
+    .no-webp .page-title {
+        background: url(f2598edb285b33bbf32572389dd763bf.jpg);
         color: transparent;
-        background: url(a52962b9743c1f4e501e5c975ed60df4.jpg);
         background-size: cover;
         background-clip: text;
+        -webkit-background-clip: text;
     }
-}
-
-@supports (-webkit-background-clip: text) {
-    .page-title {
+    .webp .page-title {
+        background: url(b2c546429a1b004c37baff94032ff350.webp);
         color: transparent;
-        background: url(a52962b9743c1f4e501e5c975ed60df4.jpg);
         background-size: cover;
         background-clip: text;
         -webkit-background-clip: text;
     }
 }
 
+@supports (-webkit-background-clip: text) {
+    .no-webp .page-title {
+        background: url(f2598edb285b33bbf32572389dd763bf.jpg);
+        color: transparent;
+        background-size: cover;
+        background-clip: text;
+        -webkit-background-clip: text;
+    }
+    .webp .page-title {
+        background: url(b2c546429a1b004c37baff94032ff350.webp);
+        color: transparent;
+        background-size: cover;
+        background-clip: text;
+        -webkit-background-clip: text;
+    }
+    .page-title {}
+}
+
 @supports (-ms-ime-align: auto) {
     /* Microsoft EdgeV13&14 CSS styles go here */
-    .page-title {
-        background: url(a52962b9743c1f4e501e5c975ed60df4.jpg);
+    .no-webp .page-title {
+        background: url(f2598edb285b33bbf32572389dd763bf.jpg);
+        background-size: cover;
+        color: #fff;
+        -webkit-background-clip: unset;
+        background-clip: unset
+    }
+    .webp .page-title {
+        background: url(b2c546429a1b004c37baff94032ff350.webp);
         background-size: cover;
         color: #fff;
         -webkit-background-clip: unset;
@@ -112,8 +135,15 @@ body {
 }
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-    .page-title {
-        background: url(a52962b9743c1f4e501e5c975ed60df4.jpg);
+    .no-webp .page-title {
+        background: url(f2598edb285b33bbf32572389dd763bf.jpg);
+        background-size: cover;
+        color: #fff;
+        -webkit-background-clip: unset;
+        background-clip: unset
+    }
+    .webp .page-title {
+        background: url(b2c546429a1b004c37baff94032ff350.webp);
         background-size: cover;
         color: #fff;
         -webkit-background-clip: unset;
@@ -185,8 +215,7 @@ body {
 
 .panel::after {
     content: '';
-    background: url("<svg><polygon points=\"0,0 100,0 100,20\" style=\"fill:black;\"></polygon></svg>");
-    ;
+    background: url(4f429a13fdf04e81dc1167962f90260f.svg);
     height: 100
 }
 
@@ -305,8 +334,8 @@ iframe, img {
     right: 0;
 }
 
-.pila-background {
-    background: url(01ad85ff8423a13d0b546f9b906189ac.jpg);
+.no-webp .pila-background {
+    background: url(a605e15b5e3555c96e4a804d822596d5.jpg);
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -314,8 +343,17 @@ iframe, img {
     height: 300px;
 }
 
-.garden-background {
-    background: url(a52962b9743c1f4e501e5c975ed60df4.jpg);
+.webp .pila-background {
+    background: url(b112cd5b049715025623cb1fd47e2668.webp);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    margin: 20px;
+    height: 300px;
+}
+
+.no-webp .garden-background {
+    background: url(f2598edb285b33bbf32572389dd763bf.jpg);
     background-size: cover;
     background-position: center;
     margin: 20px;
@@ -323,48 +361,98 @@ iframe, img {
     height: 300px;
 }
 
-.pattern-background {
-    background: url(6bb26689587d2d43d6ed56365aa123e9.jpg);
+.webp .garden-background {
+    background: url(b2c546429a1b004c37baff94032ff350.webp);
+    background-size: cover;
+    background-position: center;
+    margin: 20px;
+    width: 100%;
+    height: 300px;
+}
+
+.no-webp .pattern-background {
+    background: url(18ecdb40b46be3ed09ec4e88c23acdf0.jpg);
     background-size: cover;
     background-position: center;
     width: 100%;
     height: 300px;
 }
 
-.unearthed-background {
-    background: url(4f0b487279577a91fb01c91a25f3fed3.jpg);
+.webp .pattern-background {
+    background: url(84fb5308da6a68c79712c821edbfcf4c.webp);
     background-size: cover;
     background-position: center;
     width: 100%;
     height: 300px;
 }
 
-.funeral-background {
-    background: url(e6d3e3b97281ea7adbe3f5319b44d890.png);
+.no-webp .unearthed-background {
+    background: url(5805e6b4cab146bcec5c79058f20d66c.jpg);
     background-size: cover;
     background-position: center;
     width: 100%;
     height: 300px;
 }
 
-.efl-background {
-    background: url(66698b86e64ede987533feac8f45c2b2.jpg);
+.webp .unearthed-background {
+    background: url(89120d9d3f5af90a4be8b12130a09f2a.webp);
     background-size: cover;
     background-position: center;
     width: 100%;
     height: 300px;
 }
 
-.royal-london-background {
-    background: url(b13e24fbaf2af1e5787e8c70347841fe.png);
+
+.no-webp .funeral-background {
+    background: url(dc1be6425b742b6da170b30c9a364ff3.png);
     background-size: cover;
     background-position: center;
     width: 100%;
     height: 300px;
 }
 
-.syfy-background {
-    background: url(f6f970d739bc7671ff6c8c4809661bb2.jpg);
+.webp .funeral-background {
+    background: url(bda6bed63ec481b82e5d7050af28cdf2.webp);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 300px;
+}
+
+.no-webp .efl-background {
+    background: url(6edaeff8476df52e78ff3483acead2f4.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 300px;
+}
+
+.webp .efl-background {
+    background: url(45fb533460a6468798d7c9abbb4f4283.webp);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 300px;
+}
+
+.no-webp .royal-london-background {
+    background: url(10f637e7fd0fbed9301df0a7d06e3165.png);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 300px;
+}
+
+.webp .royal-london-background {
+    background: url(dca6fbe5df36d927dc592a51372950c2.webp);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 300px;
+}
+
+.no-webp .syfy-background {
+    background: url(67f64bf80cf6ff383989d573dbce1d81.jpg);
     /*source: http://picnicstudio.tv/syfy*/
     background-size: cover;
     background-position: center;
@@ -372,8 +460,26 @@ iframe, img {
     height: 300px;
 }
 
-.ghost-background {
-    background: url(3c5f1ac5323c26158f72c6da1f004ad4.jpg);
+.webp .syfy-background {
+    background: url(5e5b65a56708c6b90c736c83c7a8edf2.webp);
+    /*source: http://picnicstudio.tv/syfy*/
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 300px;
+}
+
+.no-webp .ghost-background {
+    background: url(c5da999d283687c38750c7cbc720b893.jpg);
+    /*source: http://picnicstudio.tv/syfy*/
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 300px;
+}
+
+.webp .ghost-background {
+    background: url(b2a6610a8dc048ddfcc8ce6c4177b7db.webp);
     /*source: http://picnicstudio.tv/syfy*/
     background-size: cover;
     background-position: center;

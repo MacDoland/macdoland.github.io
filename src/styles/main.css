@@ -27,28 +27,51 @@ body {
 }
 
 @supports (background-clip: text) {
-    .page-title {
-        color: transparent;
+    .no-webp .page-title {
         background: url('../images/garden-background.jpg');
+        color: transparent;
         background-size: cover;
         background-clip: text;
+        -webkit-background-clip: text;
     }
-}
-
-@supports (-webkit-background-clip: text) {
-    .page-title {
+    .webp .page-title {
+        background: url('../images/garden-background.webp');
         color: transparent;
-        background: url('../images/garden-background.jpg');
         background-size: cover;
         background-clip: text;
         -webkit-background-clip: text;
     }
 }
 
+@supports (-webkit-background-clip: text) {
+    .no-webp .page-title {
+        background: url('../images/garden-background.jpg');
+        color: transparent;
+        background-size: cover;
+        background-clip: text;
+        -webkit-background-clip: text;
+    }
+    .webp .page-title {
+        background: url('../images/garden-background.webp');
+        color: transparent;
+        background-size: cover;
+        background-clip: text;
+        -webkit-background-clip: text;
+    }
+    .page-title {}
+}
+
 @supports (-ms-ime-align: auto) {
     /* Microsoft EdgeV13&14 CSS styles go here */
-    .page-title {
+    .no-webp .page-title {
         background: url('../images/garden-background.jpg');
+        background-size: cover;
+        color: #fff;
+        -webkit-background-clip: unset;
+        background-clip: unset
+    }
+    .webp .page-title {
+        background: url('../images/garden-background.webp');
         background-size: cover;
         color: #fff;
         -webkit-background-clip: unset;
@@ -64,8 +87,15 @@ body {
 }
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-    .page-title {
+    .no-webp .page-title {
         background: url('../images/garden-background.jpg');
+        background-size: cover;
+        color: #fff;
+        -webkit-background-clip: unset;
+        background-clip: unset
+    }
+    .webp .page-title {
+        background: url('../images/garden-background.webp');
         background-size: cover;
         color: #fff;
         -webkit-background-clip: unset;
@@ -138,7 +168,6 @@ body {
 .panel::after {
     content: '';
     background: url('../images/divider.svg');
-    ;
     height: 100
 }
 
@@ -257,7 +286,7 @@ iframe, img {
     right: 0;
 }
 
-.pila-background {
+.no-webp .pila-background {
     background: url('../images/pila-background.jpg');
     background-size: cover;
     background-position: center;
@@ -266,7 +295,16 @@ iframe, img {
     height: 300px;
 }
 
-.garden-background {
+.webp .pila-background {
+    background: url('../images/pila-background.webp');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    margin: 20px;
+    height: 300px;
+}
+
+.no-webp .garden-background {
     background: url('../images/garden-background.jpg');
     background-size: cover;
     background-position: center;
@@ -275,7 +313,16 @@ iframe, img {
     height: 300px;
 }
 
-.pattern-background {
+.webp .garden-background {
+    background: url('../images/garden-background.webp');
+    background-size: cover;
+    background-position: center;
+    margin: 20px;
+    width: 100%;
+    height: 300px;
+}
+
+.no-webp .pattern-background {
     background: url('../images/pattern-background.jpg');
     background-size: cover;
     background-position: center;
@@ -283,7 +330,15 @@ iframe, img {
     height: 300px;
 }
 
-.unearthed-background {
+.webp .pattern-background {
+    background: url('../images/pattern-background.webp');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 300px;
+}
+
+.no-webp .unearthed-background {
     background: url('../images/unearthed.jpg');
     background-size: cover;
     background-position: center;
@@ -291,7 +346,16 @@ iframe, img {
     height: 300px;
 }
 
-.funeral-background {
+.webp .unearthed-background {
+    background: url('../images/unearthed.webp');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 300px;
+}
+
+
+.no-webp .funeral-background {
     background: url('../images/funeral-mapper.png');
     background-size: cover;
     background-position: center;
@@ -299,7 +363,15 @@ iframe, img {
     height: 300px;
 }
 
-.efl-background {
+.webp .funeral-background {
+    background: url('../images/funeral-mapper.webp');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 300px;
+}
+
+.no-webp .efl-background {
     background: url('../images/efl-match-center.jpg');
     background-size: cover;
     background-position: center;
@@ -307,7 +379,15 @@ iframe, img {
     height: 300px;
 }
 
-.royal-london-background {
+.webp .efl-background {
+    background: url('../images/efl-match-center.webp');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 300px;
+}
+
+.no-webp .royal-london-background {
     background: url('../images/royal-london.png');
     background-size: cover;
     background-position: center;
@@ -315,7 +395,15 @@ iframe, img {
     height: 300px;
 }
 
-.syfy-background {
+.webp .royal-london-background {
+    background: url('../images/royal-london.webp');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 300px;
+}
+
+.no-webp .syfy-background {
     background: url('../images/syfy20.jpg');
     /*source: http://picnicstudio.tv/syfy*/
     background-size: cover;
@@ -324,8 +412,26 @@ iframe, img {
     height: 300px;
 }
 
-.ghost-background {
+.webp .syfy-background {
+    background: url('../images/syfy20.webp');
+    /*source: http://picnicstudio.tv/syfy*/
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 300px;
+}
+
+.no-webp .ghost-background {
     background: url('../images/ghost-background.jpg');
+    /*source: http://picnicstudio.tv/syfy*/
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 300px;
+}
+
+.webp .ghost-background {
+    background: url('../images/ghost-background.webp');
     /*source: http://picnicstudio.tv/syfy*/
     background-size: cover;
     background-position: center;

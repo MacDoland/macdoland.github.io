@@ -22,12 +22,15 @@ module.exports = {
         }
       },
       {
-        test: /\.(png|jpg|gif)$/,
+        test: /.(gif|png|jpe?g|webp|svg)$/i,
         use: [
+           'file-loader',
           {
-            loader: 'url-loader',
+            loader: 'image-webpack-loader',
             options: {
-              limit: 5000
+              webp: {
+                quality: 80
+              }
             }
           }
         ]
