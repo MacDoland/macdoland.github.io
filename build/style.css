@@ -236,7 +236,7 @@ body {
     background: linear-gradient(to right bottom, #000 49%, #333 50%), linear-gradient(-50deg, #333 16px, #000 0);
 }
 
-.panel:nth-child(even) .skew-c {
+.panel:nth-child(odd) .skew-c {
     background: linear-gradient(to right bottom, #333 49%, #000 50%), linear-gradient(-50deg, #333 16px, #000 0);
 }
 
@@ -255,7 +255,7 @@ p {
     background: linear-gradient(to left bottom, #000 49%, #333 50%);
 }
 
-.panel:nth-child(even) .skew-cc {
+.panel:nth-child(odd) .skew-cc {
     background: linear-gradient(to left bottom, #333 49%, #000 50%);
     ;
 }
