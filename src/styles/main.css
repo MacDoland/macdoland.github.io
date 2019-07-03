@@ -162,7 +162,7 @@ body {
 }
 
 .panel .inner {
-    padding: 40px;
+    padding: 40px 40px 15% 40px;
 }
 
 .panel::after {
