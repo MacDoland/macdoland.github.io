@@ -171,11 +171,11 @@ body {
     height: 100
 }
 
-.panel:nth-child(even) {
+.panel:nth-child(odd) {
     background: #333;
 }
 
-.panel:nth-child(odd) {
+.panel:nth-child(even) {
     background: #000;
 }
 
