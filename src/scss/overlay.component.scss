@@ -1,4 +1,6 @@
 .c-overlay {
+  $-root: ".c-overlay";
+
   display: none;
   &--is-open {
     display: block;
@@ -11,11 +13,43 @@
     padding: 80px 5%;
     z-index: 1000;
 
-    &__inner {
+    #{$-root}__inner {
       background: #000;
       box-sizing: border-box;
+      display: flex;
       height: 100%;
       padding: 40px;
+      position: relative;
+      justify-content: space-between;
+      overflow-y: scroll;
+    }
+
+    #{$-root}__details {
+      width: 40%;
+      padding-right: 40px;
+    }
+
+    #{$-root}__image {
+      background-size: contain!important;
+      background-repeat: no-repeat!important;
+      width: 60%;
+    }
+
+    h2 {
+      font-size: 36px;
+    }
+
+    #{$-root}__close-button {
+      margin: 20px;
+      position: absolute;
+      top:0;
+      right:0;
+
+      span {
+        position: absolute;
+        left: -10000px;
+        visibility: hidden;
+      }
     }
   }
 }

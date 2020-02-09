@@ -14,6 +14,7 @@ module.exports = {
   target: 'node',
   externals: [nodeExternals()],
   watch: true,
+  devtool: 'source-map',
   module: {
     rules: [
       {
