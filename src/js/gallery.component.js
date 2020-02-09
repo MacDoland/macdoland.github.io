@@ -61,7 +61,7 @@ class Gallery {
     onItemClickHandler(event) {
         let id = event.target.id;
 
-        if (id) {
+        if (id && id !== "profile") {
             let result = this.data.tiles.filter((item) => {
                 return item.id === id;
             });
