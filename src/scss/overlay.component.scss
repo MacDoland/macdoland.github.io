@@ -1,0 +1,21 @@
+.c-overlay {
+  display: none;
+  &--is-open {
+    display: block;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 80px 5%;
+    z-index: 1000;
+
+    &__inner {
+      background: #000;
+      box-sizing: border-box;
+      height: 100%;
+      padding: 40px;
+    }
+  }
+}

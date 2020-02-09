@@ -1,289 +1,322 @@
-@import './reset.scss';
-@import './grid.scss';
+@import "./reset.scss";
+@import "./grid.scss";
+@import "./gallery.component.scss";
+@import "./overlay.component.scss";
 
-html, body, #portfolio-grid {
-    background: #000;
-    height: 100%;
-    width: 100%;
+html,
+body,
+#portfolio-grid {
+  background: #000;
+  height: 100%;
+  width: 100%;
 }
 
+.remove-scroll {
+    overflow: hidden;
+}
 
 body {
-    color: #fff;
-    font-family: Arial, Helvetica, sans-serif;
-    font-family: 'Open Sans Condensed', sans-serif;
-    font-size: 24px;
-    line-height: 32px;
-    height: 100%;
-    width: 100%;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  height: 100%;
+  width: 100%;
+
+  @media (min-width: 768px) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+h2 {
+  font-size: 24px;
+  line-height: 24px;
+  margin: 5px 0 10px;
+
+  @media (min-width: 768px) {
+    margin: 10px 0 20px;
+  }
 }
 
 p {
-    padding: 40px;
+  margin: 20px 0;
 }
 
 .page-title {
-    font-family: 'Anton', sans-serif;
-    font-size: 28vmin;
-    font-weight: bold;
-    padding: 80px 40px;
-    position: relative;
-    max-height: 100%;
-    text-align: right;
-    text-transform: uppercase;
-    color: #fff;
+  font-family: "Anton", sans-serif;
+  font-size: 28vmin;
+  font-weight: bold;
+  padding: 80px 40px;
+  position: relative;
+  max-height: 100%;
+  text-align: right;
+  text-transform: uppercase;
+  color: #fff;
 }
 
 .profile {
-    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
   filter: grayscale(100%);
   position: relative;
   z-index: 0;
 }
 
-.profile::before{
-    background: #292929;
-    content: '';
-    position: absolute;
-    top:0;
-    right:0;
-    left:0;
-    bottom:0;
-    z-index: 0;
+.profile::before {
+  background: #292929;
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 0;
 }
 
-.profile::after{
-    background: #292929;
-    content: '';
-    position: absolute;
-    top:0;
-    right:0;
-    left:0;
-    bottom:0;
-    z-index: 10;
+.profile::after {
+  background: #292929;
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 10;
 }
 
 .sketchfab-embed-wrapper {
-    height: 100%;
-    width: 100%;
+  height: 100%;
+  width: 100%;
 }
 .image-background {
-    position: relative;
+  position: relative;
 }
 
 .image-background a {
-    background-color: rgba(0, 0, 0, 0.85);
-    color: #fff;
-    display: block;
-    position: absolute;
-    padding: 10px;
-    bottom: 0;
-    right: 0;
+  background-color: rgba(0, 0, 0, 0.85);
+  color: #fff;
+  display: block;
+  position: absolute;
+  padding: 10px;
+  bottom: 0;
+  right: 0;
 }
 
 .no-webp .pila-background {
-    background: url('../images/pila-background.jpg');
-    background-size: cover;
-    background-position: center center;
+  background: url("../images/pila-background.jpg");
+  background-size: cover;
+  background-position: center center;
 }
 
 .webp .pila-background {
-    background: url('../images/pila-background.webp');
-    background-size: cover;
-    background-position: center center;
+  background: url("../images/pila-background.webp");
+  background-size: cover;
+  background-position: center center;
 }
 
 .no-webp .garden-background {
-    background: url('../images/garden-background.jpg');
-    background-size: cover;
-    background-position: center top;
+  background: url("../images/garden-background.jpg");
+  background-size: cover;
+  background-position: center top;
 }
 
 .webp .garden-background {
-    background: url('../images/garden-background.webp');
-    background-size: cover;
-    background-position: center top;
+  background: url("../images/garden-background.webp");
+  background-size: cover;
+  background-position: center top;
 }
 
 .no-webp .pattern-background {
-    background: url('../images/pattern-background.jpg');
-    background-size: cover;
-    background-position: center top;
+  background: url("../images/pattern-background.jpg");
+  background-size: cover;
+  background-position: center top;
 }
 
 .webp .pattern-background {
-    background: url('../images/pattern-background.webp');
-    background-size: cover;
-    background-position: center top;
+  background: url("../images/pattern-background.webp");
+  background-size: cover;
+  background-position: center top;
 }
 
 .no-webp .unearthed-background {
-    background: url('../images/unearthed.jpg');
-    background-size: cover;
-    background-position: center top;
+  background: url("../images/unearthed.jpg");
+  background-size: cover;
+  background-position: center top;
 }
 
 .webp .unearthed-background {
-    background: url('../images/unearthed.webp');
-    background-size: cover;
-    background-position: center top;
+  background: url("../images/unearthed.webp");
+  background-size: cover;
+  background-position: center top;
 }
 
-
 .no-webp .funeral-background {
-    background: url('../images/funeral-mapper.png');
-    background-size: cover;
-    background-position: center top;
+  background: url("../images/funeral-mapper.png");
+  background-size: cover;
+  background-position: center top;
 }
 
 .webp .funeral-background {
-    background: url('../images/funeral-mapper.webp');
-    background-size: cover;
-    background-position: center top;
+  background: url("../images/funeral-mapper.webp");
+  background-size: cover;
+  background-position: center top;
 }
 
 .no-webp .efl-background {
-    background: url('../images/efl-match-center.jpg');
-    background-size: cover;
-    background-position: center top;
+  background: url("../images/efl-match-center.jpg");
+  background-size: cover;
+  background-position: center top;
 }
 
 .webp .efl-background {
-    background: url('../images/efl-match-center.webp');
-    background-size: cover;
-    background-position: center top;
+  background: url("../images/efl-match-center.webp");
+  background-size: cover;
+  background-position: center top;
 }
 
 .no-webp .royal-london-background {
-    background: url('../images/royal-london.png');
-    background-size: cover;
-    background-position: center top;
+  background: url("../images/royal-london.png");
+  background-size: cover;
+  background-position: center top;
 }
 
 .webp .royal-london-background {
-    background: url('../images/royal-london.webp');
-    background-size: cover;
-    background-position: center top;
+  background: url("../images/royal-london.webp");
+  background-size: cover;
+  background-position: center top;
 }
 
 .no-webp .syfy-background {
-    background: url('../images/syfy20.jpg');
-    /*source: http://picnicstudio.tv/syfy*/
-    background-size: cover;
-    background-position: center top;
+  background: url("../images/syfy20.jpg");
+  /*source: http://picnicstudio.tv/syfy*/
+  background-size: cover;
+  background-position: center top;
 }
 
 .webp .syfy-background {
-    background: url('../images/syfy20.webp');
-    /*source: http://picnicstudio.tv/syfy*/
-    background-size: cover;
-    background-position: center top;
+  background: url("../images/syfy20.webp");
+  /*source: http://picnicstudio.tv/syfy*/
+  background-size: cover;
+  background-position: center top;
 }
 
 .no-webp .ghost-background {
-    background: url('../images/ghost-background.jpg');
-    background-size: cover;
-    background-position: center top;
+  background: url("../images/ghost-background.jpg");
+  background-size: cover;
+  background-position: center top;
 }
 
 .webp .ghost-background {
-    background: url('../images/ghost-background.webp');
-    background-size: cover;
-    background-position: center top;
+  background: url("../images/ghost-background.webp");
+  background-size: cover;
+  background-position: center top;
 }
 
 .no-webp .lexus-background {
-    background: url('../images/lexus.png');
-    background-size: cover;
-    background-position: center top;
+  background: url("../images/lexus.png");
+  background-size: cover;
+  background-position: center top;
 }
 
 .webp .lexus-background {
-    background: url('../images/lexus.webp');
-    background-size: cover;
-    background-position: center top;
+  background: url("../images/lexus.webp");
+  background-size: cover;
+  background-position: center top;
 }
 
-
 .no-webp .advent-background {
-    background: url('../images/advent-calendar.png');
-    background-size: cover;
-    background-position: center top;
+  background: url("../images/advent-calendar.png");
+  background-size: cover;
+  background-position: center top;
 }
 
 .webp .advent-background {
-    background: url('../images/advent-calendar.webp');
-    background-size: cover;
-    background-position: center top;
+  background: url("../images/advent-calendar.webp");
+  background-size: cover;
+  background-position: center top;
 }
 
 .no-webp .profile-background::after {
-    background: url('../images/profile.png');
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
+  background: url("../images/profile.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
 .webp .profile-background::after {
-    background: url('../images/profile.webp');
-    background-size: contain;
-    background-position: center bottom;
-    background-repeat: no-repeat;
+  background: url("../images/profile.webp");
+  background-size: contain;
+  background-position: center bottom;
+  background-repeat: no-repeat;
 }
 
 .no-webp .pila-game-background {
-    background: url('../images/pila-game.png');
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
+  background: url("../images/pila-game.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
 .webp .pila-game-background {
-    background: url('../images/pila-game.webp');
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
+  background: url("../images/pila-game.webp");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
 .no-webp .rice-background {
-    background: url('../images/joe-mcdowall-itadakimasu.jpg');
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
+  background: url("../images/joe-mcdowall-itadakimasu.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
 .webp .rice-background {
-    background: url('../images/joe-mcdowall-itadakimasu.webp');
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
+  background: url("../images/joe-mcdowall-itadakimasu.webp");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
-
 .no-webp .island-background {
-    background: url('../images/islands.png');
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
+  background: url("../images/islands.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
 .webp .island-background {
-    background: url('../images/islands.webp');
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
+  background: url("../images/islands.webp");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
 .no-webp .hunt-background {
-    background: url('../images/hunt.png');
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
+  background: url("../images/hunt.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
 .webp .hunt-background {
-    background: url('../images/hunt.webp');
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
+  background: url("../images/hunt.webp");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.no-webp .green-city-background {
+  background: url("../images/green-city.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.webp .green-city-background {
+  background: url("../images/green-city.webp");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
 }

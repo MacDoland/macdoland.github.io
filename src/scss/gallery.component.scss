@@ -1,0 +1,13 @@
+.c-gallery {
+  &__item {
+    &--web {
+      cursor: pointer;
+        transition: transform 0.5s;
+        opacity: 0.9;
+      &:hover {
+        transform: scale(0.99);
+        opacity: 1;
+      }
+    }
+  }
+}
