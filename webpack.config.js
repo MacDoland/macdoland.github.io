@@ -4,10 +4,12 @@ const nodeExternals = require('webpack-node-externals');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
-  entry: { main: './client/index.js' },
+  entry: { main: './src/index.js' },
   output: {
     filename: 'main.js',
-    path: path.resolve(__dirname, 'build')
+    path: path.resolve(__dirname, 'dist'),
+    publicPath: '/dist/'
+
   },
   target: 'node',
   externals: [nodeExternals()],
@@ -22,6 +24,18 @@ module.exports = {
         }
       },
       {
+        test: /\.s[ac]ss$/i,
+        exclude: /node_modules/,
+        use: [
+          // Creates `style` nodes from JS strings
+          'style-loader',
+          // Translates CSS into CommonJS
+          'css-loader',
+          // Compiles Sass to CSS
+          'sass-loader',
+        ],
+      },
+      {
         test: /.(gif|png|jpe?g|webp|svg)$/i,
         use: [
            'file-loader',
@@ -30,7 +44,10 @@ module.exports = {
             options: {
               webp: {
                 quality: 80
-              }
+              },
+              publicPath: function(url) {
+                return '/dist/'
+            },
             }
           }
         ]
@@ -38,20 +55,12 @@ module.exports = {
       {
         test: /\.svg$/,
         loader: 'svg-inline-loader'
-      },
-      {
-        test: /\.css$/,
-        use: [
-          'style-loader',
-          MiniCssExtractPlugin.loader,
-          'css-loader'
-        ]
       }
     ]
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: 'style.css',
+      filename: 'styles.css',
     })
   ]
 };
