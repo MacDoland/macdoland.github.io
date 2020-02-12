@@ -8,9 +8,48 @@
 html,
 body,
 #portfolio-grid {
-  background: #000;
+  background: #292929;
   height: 100%;
   width: 100%;
+}
+
+header {
+  background: #66a574;
+  border-bottom: 20px solid #292929;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+
+  @media (min-width: 768px) {
+    border-bottom: 80px solid #292929;
+    height: 400px;
+    padding: 0 40px;
+  }
+
+  h1 {
+    font-size: 32px;
+    line-height: 32px;
+    margin: 0 10px;
+    @media (min-width: 768px) {
+      font-size: 128px;
+      line-height: 128px;
+      margin: 0 40px;
+    }
+  }
+
+  div.image-background {
+    width: 128px;
+    height: 128px;
+    border-radius: 128px;
+    overflow: hidden;
+    @media (min-width: 768px) {
+      width: 320px;
+      height: 320px;
+      border-radius: 320px;
+    }
+  }
 }
 
 .remove-scroll {
@@ -249,7 +288,7 @@ p {
 .webp .profile-background::after {
   background: url("../images/profile.webp");
   background-size: contain;
-  background-position: center bottom;
+  background-position: center center;
   background-repeat: no-repeat;
 }
 
@@ -318,6 +357,105 @@ p {
 
 .webp .green-city-background {
   background: url("../images/green-city.webp");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.no-webp .heathrow-background {
+  background: url("../images/heathrow.png");
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+.webp .heathrow-background {
+  background: url("../images/heathrow.webp");
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+
+.no-webp .lions-background {
+  background: url("../images/lions.png");
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+.webp .lions-background {
+  background: url("../images/lions.webp");
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+.no-webp .bermuda-splash-background {
+  background: url("../images/bermuda-splash.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.webp .bermuda-splash-background {
+  background: url("../images/bermuda-splash.webp");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.no-webp .scottish-widows-background {
+  background: url("../images/scottish-widows.png");
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+.webp .scottish-widows-background {
+  background: url("../images/scottish-widows.webp");
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+.no-webp .ssiesta-background {
+  background: url("../images/ssiesta.png");
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+.webp .ssiesta-background {
+  background: url("../images/ssiesta.webp");
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+.no-webp .sailgp-background {
+  background: url("../images/sailgp.png");
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+.webp .sailgp-background {
+  background: url("../images/sailgp.webp");
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+.no-webp .rl-3d-background {
+  background: url("../images/rl-3d.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.webp .rl-3d-background {
+  background: url("../images/rl-3d.webp");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;

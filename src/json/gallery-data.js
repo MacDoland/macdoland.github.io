@@ -1,6 +1,5 @@
 export default {
     tiles: [
-        { id: 'profile', type: 'image', className: 'profile profile-background' },
 
         { 
             id: 'unearthed', 
@@ -8,18 +7,17 @@ export default {
             type: 'web', 
             className: 'unearthed-background' 
         },
-        
+        { id: 'lexus', title: 'Lexus', type: 'web', className: 'lexus-background' },
+        { id: 'egg-hunt', title: 'Project Egg Hunt', type: 'web', className: 'hunt-background' },
+
+        { id: 'sailgp', title: 'SailGP', type: 'web', className: 'sailgp-background' },
+     
         { id: 'funeral', title: 'SunLife Funeral Mapper', type: 'web', className: 'funeral-background' },
         { id: 'efl', title: 'EFL Match Centre', type: 'web', className: 'efl-background' },
+       
         { id: 'green-city', title: 'BBC Green City', type: 'web', className: 'green-city-background' },
         { id: 'royal-london', title: 'Royal London', type: 'web', className: 'royal-london-background' },
-        {
-            id: 'intro',
-            type: 'content',
-            className: '',
-            title: "Joe McDowall",
-            text: ["<a href=\"mailto:joe.mcdowall@gmail.com\">joe.mcdowall@gmail.com</a>", "A pragmatic web developer, passionate generalist, JavaScript specialist and a secret creative with over 9 years experience working for companies around Edinburgh", "Please feel free to explore some of the work I have been involved in."]
-        },
+       
         { id: 'garden-sketchfab', title: 'In the garden', type: 'sketchfab', src: 'https://sketchfab.com/models/75431eb321164f9689f6f98ef317f34f/embed?autospin=0.2&amp;preload=1&amp;transparent=0' },
         { id: 'syfy', title: 'Syfy Channel 20th Anniversary Quiz game', type: 'web', className: 'syfy-background' },
         { 
@@ -40,16 +38,20 @@ export default {
             ]
         },
         { id: 'bird', title: 'Steller\'s Jay', type: 'sketchfab', src: 'https://sketchfab.com/models/9cfe5bd6f132405fbf48bd004fa688bd/embed?autospin=0.2&amp;preload=1&amp;transparent=0' },
-        { id: 'lexus', title: 'Lexus', type: 'web', className: 'lexus-background' },
         { id: 'advent', title: 'Team Advent Calendar', type: 'web', className: 'advent-background' },
         { id: 'plant', title: 'Potted plant', type: 'sketchfab', src: 'https://sketchfab.com/models/e92dd6ae7eb242018642bb40a91e744e/embed?autospin=0.2&amp;autostart=0&amp;transparent=0' },
         { id: 'island', title: 'Procedural Islands', type: 'web', className: 'island-background' },
-        { id: 'egg-hunt', title: 'Project Egg Hunt', type: 'web', className: 'hunt-background' },
         { id: 'pila', title: 'Pila', type: 'sketchfab', src: 'https://sketchfab.com/models/ace7d3e35fea473599e10d2c62e7ab56/embed?autospin=0.2&amp;preload=1&amp;transparent=0' },
         { id: 'garden', title: 'In the garden', type: 'web', className: 'garden-background' },
         { id: 'landscape', title: 'Low Poly Environment', type: 'web', className: 'pila-background' },
         { id: 'weasel', title: 'Weasel character art', type: 'sketchfab', src: 'https://sketchfab.com/models/a995319e79e84c6a8df1ed8e5d3a58b0/embed?autospin=0.2&amp;preload=1&amp;transparent=0' },
         { id: 'rice', title: 'Rice ball illustration', type: 'web', className: 'rice-background' },
-        { id: 'pila-game', title: '3D person character controller prototype', type: 'web', className: 'pila-game-background' }
+        { id: 'pila-game', title: '3D person character controller prototype', type: 'web', className: 'pila-game-background' },
+        { id: 'rl-3d', title: 'Realise logo 3D scene', type: 'web', className: 'rl-3d-background' },
+        { id: 'scottish-widows', title: 'Scottish Widows', type: 'web', className: 'scottish-widows-background' },
+        { id: 'heathrow', title: 'Heathrow - Kids go free', type: 'web', className: 'heathrow-background' },
+        { id: 'bermuda-splash', title: 'Expedia Bermuda', type: 'web', className: 'bermuda-splash-background' },
+        { id: 'lions', title: 'Lions 2017 Tour', type: 'web', className: 'lions-background' },
+        { id: 'ssiesta', title: 'Naked Wines: Supermarket Siesta', type: 'web', className: 'ssiesta-background' }
     ]
 };
