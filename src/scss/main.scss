@@ -4,7 +4,6 @@
 @import "./overlay.component.scss";
 @import "./ui.scss";
 
-
 html,
 body,
 #portfolio-grid {
@@ -13,9 +12,13 @@ body,
   width: 100%;
 }
 
+#portfolio-grid {
+  height: auto;
+}
+
 header {
   background: #66a574;
-  border-bottom: 20px solid #292929;
+  border-bottom: 1px solid #fff;
   height: 200px;
   display: flex;
   align-items: center;
@@ -23,7 +26,7 @@ header {
   padding: 0 20px;
 
   @media (min-width: 768px) {
-    border-bottom: 80px solid #292929;
+    border-bottom: 1px solid #fff;
     height: 400px;
     padding: 0 40px;
   }
@@ -39,10 +42,12 @@ header {
     }
   }
 
+
   div.image-background {
     width: 128px;
     height: 128px;
     border-radius: 128px;
+    border: 2px solid #fff;
     overflow: hidden;
     @media (min-width: 768px) {
       width: 320px;
@@ -52,8 +57,17 @@ header {
   }
 }
 
+footer {
+  text-align: center;
+
+  p {
+    margin: 0 40px;
+    padding: 40px 0;
+  }
+}
+
 .remove-scroll {
-    overflow: hidden;
+  overflow: hidden;
 }
 
 body {
@@ -130,7 +144,6 @@ p {
   height: 100%;
   width: 100%;
 }
-
 
 .image-background {
   background-position: center center;
@@ -321,7 +334,6 @@ p {
   background-position: center top;
 }
 
-
 .no-webp .lions-background {
   background-image: url("../images/lions.png");
   background-position: center top;
@@ -378,7 +390,6 @@ p {
   background-image: url("../images/rl-3d.webp");
 }
 
-
 .no-webp .gea-background {
   background-image: url("../images/halifax-gea.png");
   background-position: center top;
@@ -389,7 +400,8 @@ p {
   background-position: center top;
 }
 
-.webp .image-background, .no-webp .image-background{
+.webp .image-background,
+.no-webp .image-background {
   position: relative;
   background-repeat: no-repeat;
 }

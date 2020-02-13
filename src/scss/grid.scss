@@ -2,21 +2,21 @@
   display: grid;
   grid-gap: 1px;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(20, 100vmin);
+  grid-template-rows: repeat(28, 100vmin);
 
   @media (min-width: 768px) {
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(20, 33.3333vmin);
+    grid-template-rows: repeat(14, 33.3333vmin);
   }
 
   @media (min-width: 992px) {
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: repeat(20, 33.3333vmin);
+    grid-template-rows: repeat(10, 33.3333vmin);
   }
 
   @media (min-width: 1280px) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: repeat(20, 33.3333vmin);
+    grid-template-rows: repeat(7, 33.3333vmin);
   }
 
   height: 100%;
