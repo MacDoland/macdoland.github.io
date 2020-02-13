@@ -1,12 +1,13 @@
 .c-gallery {
+  background: #292929;
   &__item {
     &--web {
       cursor: pointer;
         transition: transform 0.5s;
-        opacity: 0.9;
+        opacity: 1;
       &:hover {
         transform: scale(0.99);
-        opacity: 1;
+        opacity: 0.9;
       }
     }
   }

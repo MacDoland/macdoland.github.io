@@ -105,7 +105,7 @@ p {
 }
 
 .profile::before {
-  background: #292929;
+  background-image: #292929;
   content: "";
   position: absolute;
   top: 0;
@@ -116,7 +116,7 @@ p {
 }
 
 .profile::after {
-  background: #292929;
+  background-image: #292929;
   content: "";
   position: absolute;
   top: 0;
@@ -130,8 +130,11 @@ p {
   height: 100%;
   width: 100%;
 }
+
+
 .image-background {
-  position: relative;
+  background-position: center center;
+  background-size: cover;
 }
 
 .image-background a {
@@ -145,318 +148,248 @@ p {
 }
 
 .no-webp .pila-background {
-  background: url("../images/pila-background.jpg");
-  background-size: cover;
-  background-position: center center;
+  background-image: url("../images/pila-background.jpg");
 }
 
 .webp .pila-background {
-  background: url("../images/pila-background.webp");
-  background-size: cover;
-  background-position: center center;
+  background-image: url("../images/pila-background.webp");
 }
 
 .no-webp .garden-background {
-  background: url("../images/garden-background.jpg");
-  background-size: cover;
+  background-image: url("../images/garden-background.jpg");
   background-position: center top;
 }
 
 .webp .garden-background {
-  background: url("../images/garden-background.webp");
-  background-size: cover;
+  background-image: url("../images/garden-background.webp");
   background-position: center top;
 }
 
 .no-webp .pattern-background {
-  background: url("../images/pattern-background.jpg");
-  background-size: cover;
+  background-image: url("../images/pattern-background.jpg");
   background-position: center top;
 }
 
 .webp .pattern-background {
-  background: url("../images/pattern-background.webp");
-  background-size: cover;
+  background-image: url("../images/pattern-background.webp");
   background-position: center top;
 }
 
 .no-webp .unearthed-background {
-  background: url("../images/unearthed.jpg");
-  background-size: cover;
+  background-image: url("../images/unearthed.jpg");
   background-position: center top;
 }
 
 .webp .unearthed-background {
-  background: url("../images/unearthed.webp");
-  background-size: cover;
+  background-image: url("../images/unearthed.webp");
   background-position: center top;
 }
 
 .no-webp .funeral-background {
-  background: url("../images/funeral-mapper.png");
-  background-size: cover;
+  background-image: url("../images/funeral-mapper.png");
   background-position: center top;
 }
 
 .webp .funeral-background {
-  background: url("../images/funeral-mapper.webp");
-  background-size: cover;
+  background-image: url("../images/funeral-mapper.webp");
   background-position: center top;
 }
 
 .no-webp .efl-background {
-  background: url("../images/efl-match-center.jpg");
-  background-size: cover;
+  background-image: url("../images/efl-match-center.jpg");
   background-position: center top;
 }
 
 .webp .efl-background {
-  background: url("../images/efl-match-center.webp");
-  background-size: cover;
+  background-image: url("../images/efl-match-center.webp");
   background-position: center top;
 }
 
 .no-webp .royal-london-background {
-  background: url("../images/royal-london.png");
-  background-size: cover;
+  background-image: url("../images/royal-london.png");
   background-position: center top;
 }
 
 .webp .royal-london-background {
-  background: url("../images/royal-london.webp");
-  background-size: cover;
+  background-image: url("../images/royal-london.webp");
   background-position: center top;
 }
 
 .no-webp .syfy-background {
-  background: url("../images/syfy20.jpg");
+  background-image: url("../images/syfy20.jpg");
   /*source: http://picnicstudio.tv/syfy*/
-  background-size: cover;
   background-position: center top;
 }
 
 .webp .syfy-background {
-  background: url("../images/syfy20.webp");
+  background-image: url("../images/syfy20.webp");
   /*source: http://picnicstudio.tv/syfy*/
-  background-size: cover;
   background-position: center top;
 }
 
 .no-webp .ghost-background {
-  background: url("../images/ghost-background.jpg");
-  background-size: cover;
+  background-image: url("../images/ghost-background.jpg");
   background-position: center top;
 }
 
 .webp .ghost-background {
-  background: url("../images/ghost-background.webp");
-  background-size: cover;
+  background-image: url("../images/ghost-background.webp");
   background-position: center top;
 }
 
 .no-webp .lexus-background {
-  background: url("../images/lexus.png");
-  background-size: cover;
+  background-image: url("../images/lexus.png");
   background-position: center top;
 }
 
 .webp .lexus-background {
-  background: url("../images/lexus.webp");
-  background-size: cover;
+  background-image: url("../images/lexus.webp");
   background-position: center top;
 }
 
 .no-webp .advent-background {
-  background: url("../images/advent-calendar.png");
-  background-size: cover;
+  background-image: url("../images/advent-calendar.png");
   background-position: center top;
 }
 
 .webp .advent-background {
-  background: url("../images/advent-calendar.webp");
-  background-size: cover;
+  background-image: url("../images/advent-calendar.webp");
   background-position: center top;
 }
 
 .no-webp .profile-background::after {
-  background: url("../images/profile.png");
+  background-image: url("../images/profile.png");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
 }
 
 .webp .profile-background::after {
-  background: url("../images/profile.webp");
+  background-image: url("../images/profile.webp");
   background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
 }
 
 .no-webp .pila-game-background {
-  background: url("../images/pila-game.png");
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
+  background-image: url("../images/pila-game.png");
 }
 
 .webp .pila-game-background {
-  background: url("../images/pila-game.webp");
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
+  background-image: url("../images/pila-game.webp");
 }
 
 .no-webp .rice-background {
-  background: url("../images/joe-mcdowall-itadakimasu.jpg");
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
+  background-image: url("../images/joe-mcdowall-itadakimasu.jpg");
 }
 
 .webp .rice-background {
-  background: url("../images/joe-mcdowall-itadakimasu.webp");
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
+  background-image: url("../images/joe-mcdowall-itadakimasu.webp");
 }
 
 .no-webp .island-background {
-  background: url("../images/islands.png");
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
+  background-image: url("../images/islands.png");
 }
 
 .webp .island-background {
-  background: url("../images/islands.webp");
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
+  background-image: url("../images/islands.webp");
 }
 
 .no-webp .hunt-background {
-  background: url("../images/hunt.png");
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
+  background-image: url("../images/hunt.png");
 }
 
 .webp .hunt-background {
-  background: url("../images/hunt.webp");
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
+  background-image: url("../images/hunt.webp");
 }
 
 .no-webp .green-city-background {
-  background: url("../images/green-city.png");
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
+  background-image: url("../images/green-city.png");
 }
 
 .webp .green-city-background {
-  background: url("../images/green-city.webp");
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
+  background-image: url("../images/green-city.webp");
 }
 
 .no-webp .heathrow-background {
-  background: url("../images/heathrow.png");
-  background-size: cover;
+  background-image: url("../images/heathrow.png");
   background-position: center top;
-  background-repeat: no-repeat;
 }
 
 .webp .heathrow-background {
-  background: url("../images/heathrow.webp");
-  background-size: cover;
+  background-image: url("../images/heathrow.webp");
   background-position: center top;
-  background-repeat: no-repeat;
 }
 
 
 .no-webp .lions-background {
-  background: url("../images/lions.png");
-  background-size: cover;
+  background-image: url("../images/lions.png");
   background-position: center top;
-  background-repeat: no-repeat;
 }
 
 .webp .lions-background {
-  background: url("../images/lions.webp");
-  background-size: cover;
+  background-image: url("../images/lions.webp");
   background-position: center top;
-  background-repeat: no-repeat;
 }
 
 .no-webp .bermuda-splash-background {
-  background: url("../images/bermuda-splash.png");
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
+  background-image: url("../images/bermuda-splash.png");
 }
 
 .webp .bermuda-splash-background {
-  background: url("../images/bermuda-splash.webp");
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
+  background-image: url("../images/bermuda-splash.webp");
 }
 
 .no-webp .scottish-widows-background {
-  background: url("../images/scottish-widows.png");
-  background-size: cover;
+  background-image: url("../images/scottish-widows.png");
   background-position: center top;
-  background-repeat: no-repeat;
 }
 
 .webp .scottish-widows-background {
-  background: url("../images/scottish-widows.webp");
-  background-size: cover;
+  background-image: url("../images/scottish-widows.webp");
   background-position: center top;
-  background-repeat: no-repeat;
 }
 
 .no-webp .ssiesta-background {
-  background: url("../images/ssiesta.png");
-  background-size: cover;
+  background-image: url("../images/ssiesta.png");
   background-position: center top;
-  background-repeat: no-repeat;
 }
 
 .webp .ssiesta-background {
-  background: url("../images/ssiesta.webp");
-  background-size: cover;
+  background-image: url("../images/ssiesta.webp");
   background-position: center top;
-  background-repeat: no-repeat;
 }
 
 .no-webp .sailgp-background {
-  background: url("../images/sailgp.png");
-  background-size: cover;
+  background-image: url("../images/sailgp.png");
   background-position: center top;
-  background-repeat: no-repeat;
 }
 
 .webp .sailgp-background {
-  background: url("../images/sailgp.webp");
-  background-size: cover;
+  background-image: url("../images/sailgp.webp");
   background-position: center top;
-  background-repeat: no-repeat;
 }
 
 .no-webp .rl-3d-background {
-  background: url("../images/rl-3d.png");
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
+  background-image: url("../images/rl-3d.png");
 }
 
 .webp .rl-3d-background {
-  background: url("../images/rl-3d.webp");
-  background-size: cover;
-  background-position: center center;
+  background-image: url("../images/rl-3d.webp");
+}
+
+
+.no-webp .gea-background {
+  background-image: url("../images/halifax-gea.png");
+  background-position: center top;
+}
+
+.webp .gea-background {
+  background-image: url("../images/halifax-gea.webp");
+  background-position: center top;
+}
+
+.webp .image-background, .no-webp .image-background{
+  position: relative;
   background-repeat: no-repeat;
 }

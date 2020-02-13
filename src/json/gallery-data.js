@@ -46,6 +46,7 @@ export default {
         { id: 'landscape', title: 'Low Poly Environment', type: 'web', className: 'pila-background' },
         { id: 'weasel', title: 'Weasel character art', type: 'sketchfab', src: 'https://sketchfab.com/models/a995319e79e84c6a8df1ed8e5d3a58b0/embed?autospin=0.2&amp;preload=1&amp;transparent=0' },
         { id: 'rice', title: 'Rice ball illustration', type: 'web', className: 'rice-background' },
+        { id: 'gea', title: 'Halifax: Giving Extra Awards', type: 'web', className: 'gea-background' },
         { id: 'pila-game', title: '3D person character controller prototype', type: 'web', className: 'pila-game-background' },
         { id: 'rl-3d', title: 'Realise logo 3D scene', type: 'web', className: 'rl-3d-background' },
         { id: 'scottish-widows', title: 'Scottish Widows', type: 'web', className: 'scottish-widows-background' },
