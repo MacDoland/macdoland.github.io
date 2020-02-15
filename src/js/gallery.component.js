@@ -1,20 +1,19 @@
 import doT from '../../node_modules/dot/doT';
 import componentManager from '../js/component-manager';
-import galleryData from '../json/gallery-data';
 import EventDispatcher from '../js/event-dispatcher';
 
 class Gallery {
-    constructor(element) {
+    constructor(element, data) {
         this.element = element;
         this.eventDispatcher = new EventDispatcher();
         this.events = {
             onItemclick: 'events-on-gallery-item-click'
         };
-        this.data = galleryData;
+        this.data = data;
 
         this.template = doT.template(`
         <ul class="c-gallery c-grid">
-            {{~it.tiles :value}}
+            {{~it :value}}
                 {{?value.type == 'content'}}
                     <li id="{{=value.id}}" class="c-gallery__item c-grid__item image-background">
                         <div class="c-grid__item__inner">
@@ -62,7 +61,7 @@ class Gallery {
         let id = event.target.id;
 
         if (id && id !== "profile") {
-            let result = this.data.tiles.filter((item) => {
+            let result = this.data.filter((item) => {
                 return item.id === id;
             });
 

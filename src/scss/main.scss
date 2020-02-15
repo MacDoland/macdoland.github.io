@@ -140,6 +140,14 @@ p {
   z-index: 10;
 }
 
+.section-block{
+  padding: 40px;
+  line-height: 32px;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
 .sketchfab-embed-wrapper {
   height: 100%;
   width: 100%;
@@ -252,12 +260,12 @@ p {
 
 .no-webp .lexus-background {
   background-image: url("../images/lexus.png");
-  background-position: center top;
+  background-position: left top;
 }
 
 .webp .lexus-background {
   background-image: url("../images/lexus.webp");
-  background-position: center top;
+  background-position: left top;
 }
 
 .no-webp .advent-background {
