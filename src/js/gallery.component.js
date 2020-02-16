@@ -20,7 +20,7 @@ class Gallery {
                             <h2>{{=value.title}}</h2>
                             {{? value.text }}
                                 {{~value.text :text}}
-                                    <p>{{=text}}</p>
+                                    {{=text}}
                                 {{~}}
                             {{?}}
                         </div>

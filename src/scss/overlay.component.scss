@@ -1,6 +1,12 @@
 .c-overlay {
   $-root: ".c-overlay";
 
+  ul {
+    list-style-type: circle;
+    list-style-position: inside;
+    line-height: 32px;
+  }
+
   display: none;
   &--is-open {
     display: block;
@@ -13,36 +19,86 @@
     padding: 80px 5%;
     z-index: 1000;
 
-    #{$-root}__inner {
+    #{$-root}__outer {
       background: #000;
-      box-sizing: border-box;
-      display: flex;
+
       height: 100%;
-      padding: 40px;
+      padding: 40px 20px 40px 40px;
+      box-sizing: border-box;
+
       position: relative;
-      justify-content: space-between;
+    }
+
+    #{$-root}__inner {
+      margin: 20px 0 40px;
+      overflow-y: scroll;
+      height: 100%;
+
+      @media (min-width: 1024px) {
+        justify-content: space-between;
+        display: flex;
+      }
+    }
+
+    #{$-root}__inner::-webkit-scrollbar {
+      margin: padding;
+      width: 10px;
+    }
+    #{$-root}__inner::-webkit-scrollbar-track {
+      -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    }
+    #{$-root}__inner::-webkit-scrollbar-thumb {
+      background-color: #66a574;
+      outline: 1px solid #66a574;
+      border-radius: 6px;
+      cursor: pointer;
     }
 
     #{$-root}__details {
-      width: 40%;
-      padding-right: 40px;
+      width: 100%;
+
+      @media (min-width: 1024px) {
+        padding-right: 40px;
+        width: 40%;
+      }
     }
 
     #{$-root}__image {
-      background-size: contain!important;
-      background-repeat: no-repeat!important;
-      width: 60%;
+      background-size: contain;
+      background-repeat: no-repeat !important;
+      background-position: left top !important;
+      height: 300px;
+      width: 100%;
+      margin: 20px 0 40px;
+
+      @media (min-width: 1024px) {
+        background-size: contain !important;
+        margin: 0 40px;
+        height: 100%;
+        width: 60%;
+      }
+    }
+
+    iframe{
+      height: 100%;
+      width: 100%;
+      margin: 0 40px;
     }
 
     h2 {
       font-size: 36px;
     }
 
+    p,
+    a {
+      letter-spacing: 0.5px;
+    }
+
     #{$-root}__close-button {
       margin: 20px;
       position: absolute;
-      top:0;
-      right:0;
+      top: 0;
+      right: 0;
 
       span {
         position: absolute;

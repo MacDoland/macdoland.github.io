@@ -19,8 +19,17 @@ class Overlay {
 
         this.template = doT.template(`
             <div class="c-overlay {{? it.isOpen }}c-overlay--is-open{{?}}">
-             <div class="c-overlay__inner">
+            <div class="c-overlay__outer">
             <button class="c-overlay__close-button close"><span>Close</span></button>
+
+             <div class="c-overlay__inner">
+
+             {{? it.overlayContent }}
+                {{=it.overlayContent}}
+             {{?}}
+             {{? !it.overlayContent }}
+                <div class="c-overlay__image {{=it.className}}"></div>
+             {{?}}
 
                 <div class="c-overlay__details">
                     <h2>{{=it.title}}</h2>
@@ -30,8 +39,7 @@ class Overlay {
                         {{~}}
                     {{?}}
                 </div>
-                <div class="c-overlay__image {{=it.className}}">             
-                </div>
+             </div>
              </div>
              </div>
         `);

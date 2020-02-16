@@ -5,11 +5,16 @@
 @import "./ui.scss";
 
 html,
-body,
-#portfolio-grid {
+body {
   background: #292929;
-  height: 100%;
+  height: auto;
   width: 100%;
+}
+
+body {
+  background-image: url('../images/gaming-pattern.png');
+  background-repeat: repeat;
+  background-size: 400px;
 }
 
 #portfolio-grid {
@@ -55,6 +60,26 @@ header {
       border-radius: 240px;
     }
   }
+}
+
+/* unvisited link */
+a:link {
+  color: #66a574;
+}
+
+/* visited link */
+a:visited {
+  color: #66a574;
+}
+
+/* mouse over link */
+a:hover {
+  color: #66a574;
+}
+
+/* selected link */
+a:active {
+  color: #66a574;
 }
 
 footer {
