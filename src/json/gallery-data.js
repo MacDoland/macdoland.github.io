@@ -43,10 +43,10 @@ export default {
             ] },
         { 
             id: 'egg-hunt', 
-            title: 'Project Egg Hunt', 
+            title: 'WIP Project Egg Hunt', 
             type: 'web', 
             className: 'hunt-background', 
-            highlighted: true,
+            highlighted: false,
             overlayContent: `
                 <iframe src="http://project-egg-hunt.azurewebsites.net/"></iframe>
             `,
@@ -147,6 +147,7 @@ export default {
             title: 'SunLife Funeral Mapper', 
             type: 'web', 
             className: 'funeral-background',
+            highlighted: true,
             text: [
                 `
                     <p>SunLife were looking for a custom google map to help people plan services they would need during the death of a loved one. After experiencing a few bloated google maps over the last few years I decided to keep this one pretty light and performant. I brought in a custom event dispatcher and hooked up a lightweight pub-sub arhitecture. To handle UI updates based on pin clicks.</p>
@@ -247,7 +248,21 @@ export default {
             ]
 
         },
-        { id: 'syfy', title: 'Syfy Channel 20th Anniversary Quiz game', type: 'web', className: 'syfy-background' },
+        { 
+            id: 'syfy', 
+            title: 'Syfy Channel 20th Anniversary game', 
+            type: 'web', 
+            className: 'syfy-background',
+            text: [
+                `
+                    <p>In partnership withh Picnic Studio we built an interactive "Where's wally?" style scene to celebrate the Syfy channels 20th anniversary.  
+                    The scene was littered with loads of popular science fiction references such as Doctor Who and Battlestar Gallactica.</p> 
+                    <p>It was up to the user to search and find every reference. A major consideration on this scene was browser rendering performance, 
+                    since it was effectively a single huge image. Leveraging image compression and using 3D transforms to make use the users GPU helped. 
+                    We also had to do a large amount of device testing and iteration to make sure it was responsive across all browsers and devices.</p>
+                `
+            ]
+        },
         {
             id: 'ghost',
             title: 'Ghost train builder',
@@ -348,15 +363,30 @@ export default {
 
         },
       
-        { id: 'landscape', title: 'Low Poly Environment', type: 'web', className: 'pila-background' },
+        { 
+            id: 'landscape', 
+            title: 'Low Poly Environment', 
+            type: 'web', 
+            className: 'pila-background',
+            text: [
+                `
+                <p>A challenge that I set myself to push my experience in building out environments. 
+                I was inspired by works of art that looked incredibly complex but when you analysed it closer you could see that actually the scene was made up of a very small number of unique assets.</p>
+
+                <p>The entire scene was built in Blender with mostly simple low poly style objects. I made heavy use of Blenders hair particle system to place all the trees and individual small objects like stones and grass.
+                    This was a huge time saver, I just made sure to mask the areas of generation by grouping together the vertices and passing those through to the particle system.
+                </p>
+
+                <p>Relevant technologies: Blender </p>
+                <p>Link: <a href="https://www.artstation.com/artwork/oGLJO">https://www.artstation.com/artwork/oGLJO<a/></p>
+                `
+            ]
+        },
         { id: 'weasel', title: 'Weasel character art', type: 'sketchfab', src: 'https://sketchfab.com/models/a995319e79e84c6a8df1ed8e5d3a58b0/embed?autospin=0.2&amp;preload=1&amp;transparent=0' },
         { id: 'rice', title: 'Rice ball illustration', type: 'web', className: 'rice-background' },
         { id: 'gea', title: 'Halifax: Giving Extra Awards', type: 'web', className: 'gea-background' },
-        
-        { id: 'rl-3d', title: 'Realise logo 3D scene', type: 'web', className: 'rl-3d-background' },
         { id: 'scottish-widows', title: 'Scottish Widows', type: 'web', className: 'scottish-widows-background' },
         { id: 'heathrow', title: 'Heathrow - Kids go free', type: 'web', className: 'heathrow-background' },
-        { id: 'bermuda-splash', title: 'Expedia Bermuda', type: 'web', className: 'bermuda-splash-background' },
         { id: 'lions', title: 'Lions 2017 Tour', type: 'web', className: 'lions-background' },
         { id: 'ssiesta', title: 'Naked Wines: Supermarket Siesta', type: 'web', className: 'ssiesta-background' }
     ]
