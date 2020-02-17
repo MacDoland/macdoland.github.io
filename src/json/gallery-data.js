@@ -194,7 +194,7 @@ export default {
             text: [
                 `
                     <p>SunLife were looking for a custom google map to help people plan services they would need during the death of a loved one. After experiencing a few bloated google maps over the last few years I decided to keep this one pretty light and performant. I brought in a custom event dispatcher and hooked up a lightweight pub-sub arhitecture. To handle UI updates based on pin clicks.</p>
-                    <p>Using an event driven system made it quite easy to update multiple UI components with the same data such as a favourited pin changing icon, updating the count, displaying it on a list.
+                    <p>Using an event driven system made it quite easy to update multiple UI components with the same data such as a favourited pin changing icon, updating the count and displaying it on a list.
                     <p>Link: <a href="https://www.sunlife.co.uk/funeral-planning/funeral-planning-mapper/">https://www.sunlife.co.uk/funeral-planning/funeral-planning-mapper/</a></p>
                 
                     `
@@ -210,7 +210,7 @@ export default {
             text: [
                 `
                     <p>This project for the English Football League (EFL) was the first major EpiServer build our agency won. 
-                    It was another multi-tenancy web application that catered for 66 different english football clubs initaly.</p>
+                    It was another multi-tenancy web application that catered for 66 different english football clubs initially.</p>
 
                     <p>I was put in charge of the integration of the Match Centre for all 66 clubs. This involved creating event pages for every game in a season with pre, during and post match states. </p>
                     <p>The majority of the work was integrating and theming of Opta Widgets. I built a Match Center management component which registered and orchestrated the rendering of the right widget during the right match state.</p>

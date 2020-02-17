@@ -16,15 +16,17 @@ class Gallery {
             {{~it :value}}
                 {{?value.type == 'content'}}
                     <li id="{{=value.id}}" class="c-gallery__item c-grid__item image-background">
-                        {{?value.clientName}}<div class="c-gallery__item__client-name"><span>{{=value.clientName}}</span></div>{{?}}
-                        <div class="c-grid__item__inner">
-                            <h2>{{=value.title}}</h2>
-                            {{? value.text }}
-                                {{~value.text :text}}
-                                    {{=text}}
-                                {{~}}
-                            {{?}}
-                        </div>
+                        <button>
+                            {{?value.clientName}}<div class="c-gallery__item__client-name"><span>{{=value.clientName}}</span></div>{{?}}
+                            <div class="c-grid__item__inner">
+                                <h2>{{=value.title}}</h2>
+                                {{? value.text }}
+                                    {{~value.text :text}}
+                                        {{=text}}
+                                    {{~}}
+                                {{?}}
+                            </div>
+                        </button>
                     </li>
                 {{?}}
                 {{?value.type == 'image'}}
@@ -34,7 +36,9 @@ class Gallery {
                 {{?}}
                 {{?value.type == 'web'}}
                     <li id="{{=value.id}}" class="c-gallery__item c-gallery__item--web c-grid__item image-background {{=value.className}}">
-                    {{?value.clientName}}<div class="c-gallery__item__client-name"><span>{{=value.clientName}}</span></div>{{?}}
+                    <button>
+                        {{?value.clientName}}<div class="c-gallery__item__client-name"><span>{{=value.clientName}}</span></div>{{?}}
+                    </button>
                     </li>
                 {{?}}
                 {{?value.type == 'sketchfab'}}
