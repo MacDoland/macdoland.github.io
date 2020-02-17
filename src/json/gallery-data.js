@@ -233,9 +233,9 @@ export default {
                 `
                 <p>Unearthed was an interactive experience that followed the story of the hummingbirds struggle to survive.</p>
 
-                <p>It was a pilot built in collaboration with BBC Connected Studios for their BBC Taster programme, their home for new ideas.</p>
+                <p>It was a pilot built in collaboration with BBC Connected Studios for their BBC Taster programme which is the home for their new ideas.</p>
                 
-                <p>The pilot consistent of a few interactive scenes:
+                <p>The pilot consists of a few interactive scenes:
 
                     <ul>
                         <li>Tutorial introduction</li>
@@ -247,7 +247,7 @@ export default {
 
                 <p> As the sole developer on the project I worked closely with our Media and Motion graphics designer to craft each interactive element.
                 I first built a custom interactive timeline framework that allowed us to stitch together the various scenes into a coherent experience. 
-                The binaural audio was achieved through the use of the web audio API and we coordinate with sound designer Richard de Mowbray to get the most out of the assets.
+                The binaural audio was achieved through the use of the web audio API and we coordinated with sound designer Richard de Mowbray to get the most out of the assets.
 
                 <p>Winner of Best Immersion at BIMA Awards 2016</p>
 
@@ -298,7 +298,7 @@ export default {
                 At the time we were keen to explore the Aframe framework and came up with this idea of a user being able to customise their own Ghost train ride.
                 My responsibilities on the project included building 3D models for the rooms, rides and monsters but also a lot of the JavaScript to make the cart follow its course.`,
                 `A few years prior to this project I had worked on another side project to allow for the setup of simple scenes in ThreeJS through AngularJS directives. 
-                So it was refreshing to use a framework that was developed along the same ideals. Because models could be defined by HTML, this allowed anyone on the team regardless of 3D experience to manipulated the levels.`,
+                So it was refreshing to use a framework that was developed along the same ideals. Because models could be defined by HTML, this allowed anyone on the team regardless of 3D experience to manipulate the levels.`,
                 `The core idea behind this was to uv unwrap all the building blocks onto a single texture and then swap these textures out to skin each room dynamically. The user had limited choices on lighting, theme and the monsters that would pop up.`,
                 `Relevant technologies: <br/> <ul><li>Vue.js</li><li>Aframe</li><li>Three.js</li></ul>`,
                 `<a href="http://ghosttrainbuilder.com/">http://ghosttrainbuilder.com/</a>`
@@ -315,7 +315,7 @@ export default {
                 `
                     <p>On the lead up to Christmas 2019 a few members of the team decided to band together to organise a team advent calendar.</p>
 
-                    <p>The team were give a simple brief to supple a fixed size, picture, animation or experience that conformed to a selected colour palette.
+                    <p>The team were give a simple brief; to supply a fixed-size picture, animation or experience that conformed to a selected colour palette.
                     The submissions were revealed to company one by one every day in december leading up to Christmas day.
                     </p>
 
@@ -340,11 +340,11 @@ export default {
             `,
             text: [
                 `
-                <p>Procedural generation is something that has always interested me. Particularly the blend between crafted experiences and procedural generation. I've had some experience building scenes with procedural generation using the Unity game engine to craft little procedureal planets.</p>
+                <p>Procedural generation is something that has always interested me. Particularly the blend between crafted experiences and procedural generation. I've had some experience using the Unity game engine to craft little procedural planets.</p>
                 <p>I was really keen on taking this concept to the browser and trying my hand at a few techniques using ThreeJS.</p>
                 <p>I made use of perlin.js to generate a number of different noise textures which were merged together to build a heightmap.
-                I then translated this hightmap into geometry and used a custom shader with some simple rules such as height or slope angle to paint the terrain with some simple colours to represent rock or grass.</p>
-                <p>I particularly loved was generating new islands by hitting spacebar and watching the islands blend between the different states. This was done by capturing the height data of both states then blending between them over time. Since the colouring was calculated by the shader, this gave a nice effect during the blend.
+                I then translated this heightmap into geometry and used a custom shader with some simple rules such as height or slope angle to paint the terrain with some simple colours to represent rock or grass.</p>
+                <p>One element I particularly loved was generating new islands by hitting spacebar and watching the islands blend between the different states. This was done by capturing the height data of both states then blending between them over time. Since the colouring was calculated by the shader, this gave a nice effect during the blend.
                 `
             ]
 
@@ -359,8 +359,8 @@ export default {
             className: 'pila-background',
             text: [
                 `
-                <p>A challenge that I set myself to push my experience in building out environments. 
-                I was inspired by works of art that looked incredibly complex but when you analysed it closer you could see that actually the scene was made up of a very small number of unique assets.</p>
+                <p>This was a challenge that I set myself to push my experience in building out environments. 
+                I was inspired by works of art that looked incredibly complex but when analysed closer you could see that actually the scene was made up of a very small number of unique assets.</p>
 
                 <p>The entire scene was built in Blender with mostly simple low poly style objects. I made heavy use of Blenders hair particle system to place all the trees and individual small objects like stones and grass.
                     This was a huge time saver, I just made sure to mask the areas of generation by grouping together the vertices and passing those through to the particle system.
@@ -388,9 +388,9 @@ export default {
                 <p>This was achieved in two ways:</p>
                 <ul>
                 <li>Clustering</li>
-                <li>A Quadtree</li>
+                <li>A quadtree data structure</li>
                 </ul>
-                <p>The map was split up in to 4 equal chunks recursively so that within each chunk that same division happened again until. This made lookups based on geolocation a lot faster.</p>
+                <p>The map was split up in to 4 equal chunks recursively so that within each chunk that same division happened again until there were no nodes left. This made finding pins for a particlar area, or geolocation bounds very fast. </p>
                 
                 `
             ]
@@ -412,14 +412,12 @@ export default {
             The project had a really tight turn around and we had to deliver something in less than two weeks.
             </p>
 
-            <p>For speed I used a Blender addon called BLAM which provides guided perspective matching which allowed me to match the scenes camera to the perspective used in a storyboard from one of our designers.
+            <p>For speed I used a Blender addon called "BLAM" which provides guided perspective matching which allowed me to match the scenes camera to the perspective used in a storyboard.
             This allowed me to quickly block out the scene with simple primitive shapes to get a sense of scale.</p>
             
-            <p>From that block out I built two versions of the city using a colour palette provided by our designer. 
+            <p>From that block-out I built two versions of the city using a colour palette provided by our designer. 
             The first version was a congested, polluted, smoggy scene and the other was filled with greenery and open spaces.
             A camera animation sequence was captured for each city version and then composited together by our motion graphics designer.</p>
-
-            <p>Each model was crafted by me other than the car models which were purchased for time.</p>
 
             `
         ] 
