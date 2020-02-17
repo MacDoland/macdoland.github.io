@@ -41,6 +41,46 @@ export default {
                 `
 
             ] },
+
+
+            {
+                id: 'garden',
+                title: 'In the garden',
+                type: 'web',
+                className: 'garden-background',
+                highlighted: false,
+                overlayContent: `
+                <iframe src="https://sketchfab.com/models/75431eb321164f9689f6f98ef317f34f/embed?autospin=0.2&amp;preload=1&amp;transparent=0"></iframe>
+            `,
+                text: [
+                    `
+                <p>This piece of work close to my heart. A side project I worked on last year that went through many months of iteration. 
+                I was looking for some practice on building out environments so decided to impose a size limition to that of a garden to help with scope and focus.</p>
+    
+                <p>I created a reference board with PureRef of all the various garden related objects that interested me. I was particularly drawn to outhouse conversions and that quickly became the main focus.</p>
+    
+                <p>I like the idea of every scene having a story behind it and for this I settled on the thought that the garden belonged to an elderly man who was spending his years of retirement building bird houses.</p>
+    
+                <p>The scene was almost entirely modelled and textured in Blender with the exception of some foliage shapes being produced using Photoshop. 
+                This was built prior to the official release of Blender 2.8, but I did download a beta version to help combine UV maps for baking. 
+                I baked the entire scene into textures for uploading to Sketchfab where it was staff picked. A mechanism where staff can feature particular pieces of work.</p>
+    
+                <p>
+                Some work in progress renders can be found here on artstation: 
+                <a href="https://www.artstation.com/artwork/2xOmLy">https://www.artstation.com/artwork/2xOmLy</a>
+                </p>
+    
+                <p>
+                Sketchfab: 
+                <a href="https://sketchfab.com/3d-models/in-the-garden-75431eb321164f9689f6f98ef317f34f">https://sketchfab.com/3d-models/in-the-garden-75431eb321164f9689f6f98ef317f34f</a>
+                </p>
+                
+                
+                `
+                ]
+    
+            },
+
         { 
             id: 'egg-hunt', 
             title: 'WIP Project Egg Hunt', 
@@ -204,6 +244,9 @@ export default {
                 I first built a custom interactive timeline framework that allowed us to stitch together the various scenes into a coherent experience. 
                 The binaural audio was achieved through the use of the web audio API and we coordinate with sound designer Richard de Mowbray to get the most out of the assets.
 
+                <p>Winner of Best Immersion at BIMA Awards 2016</p>
+
+                <p>Nominated for Grand Prix at BIMA Awards 2016</p>
                 <p>Related article: <a href="https://www.bbc.co.uk/taster/pilots/unearthed">https://www.bbc.co.uk/taster/pilots/unearthed</a></p>
                 `
             ]
@@ -307,7 +350,7 @@ export default {
         { 
             id: 'island', 
             title: 'Procedural Islands', 
-            highlighted: true, 
+            highlighted: false, 
             type: 'web', 
             className: 'island-background',
             overlayContent: `
@@ -325,43 +368,7 @@ export default {
 
          },
         { id: 'pila', title: 'Pila', type: 'sketchfab', src: 'https://sketchfab.com/models/ace7d3e35fea473599e10d2c62e7ab56/embed?autospin=0.2&amp;preload=1&amp;transparent=0' },
-        {
-            id: 'garden',
-            title: 'In the garden',
-            type: 'web',
-            className: 'garden-background',
-            highlighted: true,
-            overlayContent: `
-            <iframe src="https://sketchfab.com/models/75431eb321164f9689f6f98ef317f34f/embed?autospin=0.2&amp;preload=1&amp;transparent=0"></iframe>
-        `,
-            text: [
-                `
-            <p>This piece of work close to my heart. A side project I worked on last year that went through many months of iteration. 
-            I was looking for some practice on building out environments so decided to impose a size limition to that of a garden to help with scope and focus.</p>
-
-            <p>I created a reference board with PureRef of all the various garden related objects that interested me. I was particularly drawn to outhouse conversions and that quickly became the main focus.</p>
-
-            <p>I like the idea of every scene having a story behind it and for this I settled on the thought that the garden belonged to an elderly man who was spending his years of retirement building bird houses.</p>
-
-            <p>The scene was almost entirely modelled and textured in Blender with the exception of some foliage shapes being produced using Photoshop. 
-            This was built prior to the official release of Blender 2.8, but I did download a beta version to help combine UV maps for baking. 
-            I baked the entire scene into textures for uploading to Sketchfab where it was staff picked. A mechanism where staff can feature particular pieces of work.</p>
-
-            <p>
-            Some work in progress renders can be found here on artstation: 
-            <a href="https://www.artstation.com/artwork/2xOmLy">https://www.artstation.com/artwork/2xOmLy</a>
-            </p>
-
-            <p>
-            Sketchfab: 
-            <a href="https://sketchfab.com/3d-models/in-the-garden-75431eb321164f9689f6f98ef317f34f">https://sketchfab.com/3d-models/in-the-garden-75431eb321164f9689f6f98ef317f34f</a>
-            </p>
-            
-            
-            `
-            ]
-
-        },
+      
       
         { 
             id: 'landscape', 
@@ -384,10 +391,36 @@ export default {
         },
         { id: 'weasel', title: 'Weasel character art', type: 'sketchfab', src: 'https://sketchfab.com/models/a995319e79e84c6a8df1ed8e5d3a58b0/embed?autospin=0.2&amp;preload=1&amp;transparent=0' },
         { id: 'rice', title: 'Rice ball illustration', type: 'web', className: 'rice-background' },
-        { id: 'gea', title: 'Halifax: Giving Extra Awards', type: 'web', className: 'gea-background' },
+        { 
+            id: 'gea', 
+            title: 'Halifax: Giving Extra Awards', 
+            type: 'web', 
+            className: 'gea-background', 
+            highlighted: true, 
+            overlayContent: '<div class="c-overlay__image gea-background-2"></div>',
+            text: [
+                `
+                <p>In 2015 I work on the front end build for the Halifax Giving Extra Awards. My favourite part of this site was the google map integration to show all the nominees and award winners.</p>
+                <p>In that year I had witnessed another map built for another client that really wasn't performing to expectations so for this map I decided that performance was going to be a primary consideration.</p>
+                <p>This was achieved in two ways:</p>
+                <ul>
+                <li>Clustering</li>
+                <li>An Octree</li>
+                </ul>
+                <p>The map was split up in to 8 equal chunks recursively so that within each chunk that same division happened again until. This made lookups based on geolocation a lot faster.</p>
+                
+                `
+            ]
+
+     },
         { id: 'scottish-widows', title: 'Scottish Widows', type: 'web', className: 'scottish-widows-background' },
         { id: 'heathrow', title: 'Heathrow - Kids go free', type: 'web', className: 'heathrow-background' },
         { id: 'lions', title: 'Lions 2017 Tour', type: 'web', className: 'lions-background' },
-        { id: 'ssiesta', title: 'Naked Wines: Supermarket Siesta', type: 'web', className: 'ssiesta-background' }
+        { id: 'ssiesta', title: 'Naked Wines: Supermarket Siesta', type: 'web', className: 'ssiesta-background' },
+        { id: 'rl-theatre', title: 'Royal London: Theatre Of Life', type: 'web', className: 'theatre-background', overlayContent: '<div class="c-overlay__image theatre-background-2"></div>', highlighted: true, text: [
+            `
+                <p>Royal London's Theatre of Life was an interactive piece which was put together to teach customers about life insurance before they made their application. It was mainly done using layered gifs/PNG sequences and CSS3 animations all orchestrated by a little bit of timeline JavaScript.</p>
+            `
+        ] }
     ]
 };

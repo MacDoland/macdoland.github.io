@@ -430,12 +430,42 @@ p {
 }
 
 .no-webp .gea-background {
-  background-image: url("../images/halifax-gea.png");
+  background-image: url("../images/gea-map.jpg");
   background-position: center top;
 }
 
 .webp .gea-background {
-  background-image: url("../images/halifax-gea.webp");
+  background-image: url("../images/gea-map.webp");
+  background-position: center top;
+}
+
+.no-webp .gea-background-2 {
+  background-image: url("../images/gea-map-2.jpg");
+  background-position: center top;
+}
+
+.webp .gea-background-2 {
+  background-image: url("../images/gea-map-2.webp");
+  background-position: center top;
+}
+
+.no-webp .theatre-background {
+  background-image: url("../images/rl-theatre-1.gif");
+  background-position: center top;
+}
+
+.webp .theatre-background {
+  background-image: url("../images/rl-theatre-1.gif");
+  background-position: center top;
+}
+
+.no-webp .theatre-background-2 {
+  background-image: url("../images/rl-theatre-2.gif");
+  background-position: center top;
+}
+
+.webp .theatre-background-2 {
+  background-image: url("../images/rl-theatre-2.gif");
   background-position: center top;
 }
 
