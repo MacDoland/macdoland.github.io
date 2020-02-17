@@ -265,7 +265,8 @@ export default {
             className: 'royal-london-background',
             text: [
                 `
-                <p>I spent the first 14 months of my employment with Realise on site at Royal Londons offices. There I was part of a team of developers working on Royal Londons rebranding. One particular highlight was the navigation system which constisted of grid of boxes of various sizes with interesting CSS tranisitions where content overlayed the boxes.</p>
+                <p>I spent the first 14 months of my employment with Realise on site at Royal Londons offices. There I was part of a team of developers working on Royal Londons rebranding. One particular highlight was the navigation system which consisted of a grid of boxes of various sizes with interesting CSS transitions. 
+                The sub items needed to grow and expand to cover the parent boxes in a pleasing manner.</p>
                 <p>Relevant technologies: Bootstrap 3, Angular 1.x </p>
                 <p>Link: <a href="https://www.royallondon.com/">https://www.royallondon.com/<a/></p>
                 `
