@@ -29,3 +29,5 @@ overlay.init();
 
 gallery.onItemClick(overlayOpen);
 galleryHighlight.onItemClick(overlayOpen);
+
+document.body.style.visibility='visible';
