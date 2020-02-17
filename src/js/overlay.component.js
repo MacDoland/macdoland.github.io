@@ -47,9 +47,6 @@ class Overlay {
 
     init() {
         this.render();
-
-
-
     }
 
     bindEvents() {

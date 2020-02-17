@@ -16,6 +16,7 @@ class Gallery {
             {{~it :value}}
                 {{?value.type == 'content'}}
                     <li id="{{=value.id}}" class="c-gallery__item c-grid__item image-background">
+                        {{?value.clientName}}<div class="c-gallery__item__client-name"><span>{{=value.clientName}}</span></div>{{?}}
                         <div class="c-grid__item__inner">
                             <h2>{{=value.title}}</h2>
                             {{? value.text }}
@@ -27,13 +28,18 @@ class Gallery {
                     </li>
                 {{?}}
                 {{?value.type == 'image'}}
-                    <li id="{{=value.id}}" class="c-gallery__item c-gallery__item--image c-grid__item image-background {{=value.className}}"></li>
+                    <li id="{{=value.id}}" class="c-gallery__item c-gallery__item--image c-grid__item image-background {{=value.className}}">
+                    {{?value.clientName}}<div class="c-gallery__item__client-name"><span>{{=value.clientName}}</span></div>{{?}}
+                    </li>
                 {{?}}
                 {{?value.type == 'web'}}
-                    <li id="{{=value.id}}" class="c-gallery__item c-gallery__item--web c-grid__item image-background {{=value.className}}"></li>
+                    <li id="{{=value.id}}" class="c-gallery__item c-gallery__item--web c-grid__item image-background {{=value.className}}">
+                    {{?value.clientName}}<div class="c-gallery__item__client-name"><span>{{=value.clientName}}</span></div>{{?}}
+                    </li>
                 {{?}}
                 {{?value.type == 'sketchfab'}}
                 <li id="{{=value.id}}" class="c-grid__item">
+                {{?value.clientName}}<div class="c-gallery__item__client-name"><span>{{=value.clientName}}</span></div>{{?}}
                     <div class="sketchfab-embed-wrapper">
                         <iframe title="sketchfab model"
                             src="{{=value.src}}"
@@ -58,7 +64,7 @@ class Gallery {
     }
 
     onItemClickHandler(event) {
-        let id = event.target.id;
+        let id = event.currentTarget.id;
 
         if (id && id !== "profile") {
             let result = this.data.filter((item) => {

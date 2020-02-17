@@ -3,6 +3,7 @@ export default {
         { 
             id: 'lexus', 
             title: 'Lexus', 
+            clientName: 'Lexus',
             type: 'web', 
             className: 'lexus-background', 
             highlighted: true,
@@ -116,6 +117,7 @@ export default {
         { 
             id: 'sailgp', 
             title: 'SailGP', 
+            clientName: 'SailGP',
             type: 'web', 
             className: 'sailgp-background', 
             highlighted: true,
@@ -185,6 +187,7 @@ export default {
         { 
             id: 'funeral', 
             title: 'SunLife Funeral Mapper', 
+            clientName: 'SunLife',
             type: 'web', 
             className: 'funeral-background',
             highlighted: true,
@@ -200,6 +203,7 @@ export default {
         { 
             id: 'efl', 
             title: 'EFL Match Centre', 
+            clientName: 'EFL',
             type: 'web', 
             className: 'efl-background', 
             highlighted: true,
@@ -221,6 +225,7 @@ export default {
         {
             id: 'unearthed',
             title: 'BBC Unearthed',
+            clientName: 'BBC',
             type: 'web',
             className: 'unearthed-background',
             highlighted: true,
@@ -251,35 +256,11 @@ export default {
                 `
             ]
         },
-        { 
-            id: 'green-city', 
-            title: 'BBC Green City', 
-            type: 'web', 
-            className: 'green-city-background', 
-            highlighted: true,
-            text:[
-                `
-                <p>
-                This piece of work was the first commerical project I've worked on where I didn't write any code. 
-                The BBC were looking for a short video sequence of a prototype scene that demonstrated their green city idea. 
-                The project had a really tight turn around and we had to deliver something in less than two weeks.
-                </p>
-
-                <p>For speed I used a Blender addon called BLAM which provides guided perspective matching which allowed me to match the scenes camera to the perspective used in a storyboard from one of our designers.
-                This allowed me to quickly block out the scene with simple primitive shapes to get a sense of scale.</p>
-                
-                <p>From that block out I built two versions of the city using a colour palette provided by our designer. 
-                The first version was a congested, polluted, smoggy scene and the other was filled with greenery and open spaces.
-                A camera animation sequence was captured for each city version and then composited together by our motion graphics designer.</p>
-
-                <p>Each model was crafted by me other than the car models which were purchased for time.</p>
-
-                `
-            ] 
-        },
+      
         { 
             id: 'royal-london', 
             title: 'Royal London', 
+            clientName: 'Royal London',
             type: 'web', 
             className: 'royal-london-background',
             text: [
@@ -395,6 +376,7 @@ export default {
             id: 'gea', 
             title: 'Halifax: Giving Extra Awards', 
             type: 'web', 
+            clientName: 'Halifax',
             className: 'gea-background', 
             highlighted: true, 
             overlayContent: '<div class="c-overlay__image gea-background-2"></div>',
@@ -413,11 +395,39 @@ export default {
             ]
 
      },
-        { id: 'scottish-widows', title: 'Scottish Widows', type: 'web', className: 'scottish-widows-background' },
-        { id: 'heathrow', title: 'Heathrow - Kids go free', type: 'web', className: 'heathrow-background' },
-        { id: 'lions', title: 'Lions 2017 Tour', type: 'web', className: 'lions-background' },
-        { id: 'ssiesta', title: 'Naked Wines: Supermarket Siesta', type: 'web', className: 'ssiesta-background' },
-        { id: 'rl-theatre', title: 'Royal London: Theatre Of Life', type: 'web', className: 'theatre-background', overlayContent: '<div class="c-overlay__image theatre-background-2"></div>', highlighted: true, text: [
+
+     { 
+        id: 'green-city', 
+        title: 'BBC Green City', 
+        clientName: 'BBC',
+        type: 'web', 
+        className: 'green-city-background', 
+        highlighted: true,
+        text:[
+            `
+            <p>
+            This piece of work was the first commerical project I've worked on where I didn't write any code. 
+            The BBC were looking for a short video sequence of a prototype scene that demonstrated their green city idea. 
+            The project had a really tight turn around and we had to deliver something in less than two weeks.
+            </p>
+
+            <p>For speed I used a Blender addon called BLAM which provides guided perspective matching which allowed me to match the scenes camera to the perspective used in a storyboard from one of our designers.
+            This allowed me to quickly block out the scene with simple primitive shapes to get a sense of scale.</p>
+            
+            <p>From that block out I built two versions of the city using a colour palette provided by our designer. 
+            The first version was a congested, polluted, smoggy scene and the other was filled with greenery and open spaces.
+            A camera animation sequence was captured for each city version and then composited together by our motion graphics designer.</p>
+
+            <p>Each model was crafted by me other than the car models which were purchased for time.</p>
+
+            `
+        ] 
+    },
+        { id: 'scottish-widows',clientName: 'Scottish Widows', title: 'Scottish Widows', type: 'web', className: 'scottish-widows-background' },
+        { id: 'heathrow', clientName: 'Heathrow', title: 'Heathrow - Kids go free', type: 'web', className: 'heathrow-background' },
+        { id: 'lions', clientName: 'Standard Life Investments',  title: 'Lions 2017 Tour', type: 'web', className: 'lions-background' },
+        { id: 'ssiesta', clientName: 'Naked Wines', title: 'Naked Wines: Supermarket Siesta', type: 'web', className: 'ssiesta-background' },
+        { id: 'rl-theatre',  clientName: 'Royal London', title: 'Royal London: Theatre Of Life', type: 'web', className: 'theatre-background', overlayContent: '<div class="c-overlay__image theatre-background-2"></div>', highlighted: true, text: [
             `
                 <p>Royal London's Theatre of Life was an interactive piece which was put together to teach customers about life insurance before they made their application. It was mainly done using layered gifs/PNG sequences and CSS3 animations all orchestrated by a little bit of timeline JavaScript.</p>
             `

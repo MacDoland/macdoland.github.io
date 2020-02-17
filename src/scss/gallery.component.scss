@@ -1,17 +1,68 @@
 .c-gallery {
+  $root: this;
+
   box-sizing: border-box;
   max-width: 1920px;
   margin: 0 auto;
-  padding: 0 20px;  
+  padding: 0 20px;
   &__item {
+    position: relative;
+
     &--web {
-      cursor: pointer;
-        transition: transform 0.5s;
-        opacity: 1;
+      .c-gallery__item__client-name {
+        color: #fff;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+
+        &::after {
+          content: "";
+          transition: background-color 0.25s;
+          background-color: rgba(0, 0, 0, 0);
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          z-index: 100;
+        }
+
+        span {
+          opacity: 0;
+          transition: opacity 0.25s;
+          position: absolute;
+          font-size: 48px;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          text-align: center;
+          line-height: 48px;
+        }
+      }
+
       &:hover {
         transform: scale(0.99);
-        opacity: 0.9;
+        @media (min-width: 768px) {
+          .c-gallery__item__client-name {
+            span {
+              display: block;
+              opacity: 1;
+              z-index: 1000;
+            }
+
+            &::after {
+              content: "";
+              background-color: rgba(0, 0, 0, 0.85);
+            }
+          }
+        }
       }
+
+      cursor: pointer;
+      transition: transform 0.5s;
+      opacity: 1;
     }
   }
 }
