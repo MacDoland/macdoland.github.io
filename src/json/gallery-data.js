@@ -405,9 +405,9 @@ export default {
                 <p>This was achieved in two ways:</p>
                 <ul>
                 <li>Clustering</li>
-                <li>An Octree</li>
+                <li>A Quadtree</li>
                 </ul>
-                <p>The map was split up in to 8 equal chunks recursively so that within each chunk that same division happened again until. This made lookups based on geolocation a lot faster.</p>
+                <p>The map was split up in to 4 equal chunks recursively so that within each chunk that same division happened again until. This made lookups based on geolocation a lot faster.</p>
                 
                 `
             ]
