@@ -20,9 +20,6 @@ let galleryItems = data.filter(item => !item.highlighted);
 let gallery = new Gallery(galleryElement, galleryItems);
 let galleryHighlight = new Gallery(galleryHighlightElement, highlights);
 
-console.log('highlights', highlights)
-console.log('items', galleryItems)
-
 let overlay = new Overlay(overlayElement);
 let overlayOpen = overlay.open.bind(overlay);
 
