@@ -400,7 +400,7 @@ export default {
             overlayContent: '<div class="c-overlay__image gea-background-2"></div>',
             text: [
                 `
-                <p>In 2015 I work on the front end build for the Halifax Giving Extra Awards. My favourite part of this site was the google map integration to show all the nominees and award winners.</p>
+                <p>In 2015 I worked on the front end build for the Halifax Giving Extra Awards. My favourite part of this site was the google map integration to show all the nominees and award winners.</p>
                 <p>In that year I had witnessed another map built for another client that really wasn't performing to expectations so for this map I decided that performance was going to be a primary consideration.</p>
                 <p>This was achieved in two ways:</p>
                 <ul>
