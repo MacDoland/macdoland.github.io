@@ -19,6 +19,7 @@
 
         &::after {
           content: "";
+          cursor: pointer;
           transition: background-color 0.25s;
           background-color: rgba(0, 0, 0, 0);
           position: absolute;
