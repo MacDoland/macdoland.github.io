@@ -3,17 +3,20 @@
   flex-wrap: wrap;
   justify-content: center;
 
-
   height: 100%;
   width: 100%;
 
   &__item {
     background: #292929;
     box-sizing: border-box;
-    margin: 1px;
+    margin: 5px 0;
     height: 300px;
     width: 460px;
     max-width: 100%;
+
+    @media (min-width: 768px) { 
+      margin: 1px;
+    }
   }
 
   &__item__inner {
