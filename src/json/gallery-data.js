@@ -49,6 +49,7 @@ export default {
                 title: 'In the garden',
                 type: 'web',
                 className: 'garden-background',
+                clientName: 'In the garden',
                 highlighted: false,
                 overlayContent: `
                 <iframe src="https://sketchfab.com/models/75431eb321164f9689f6f98ef317f34f/embed?autospin=0.2&amp;preload=1&amp;transparent=0"></iframe>
@@ -87,6 +88,7 @@ export default {
             title: 'WIP Project Egg Hunt', 
             type: 'web', 
             className: 'hunt-background', 
+            clientName: 'Project Egg Hunt',
             highlighted: false,
             overlayContent: `
                 <iframe src="http://project-egg-hunt.azurewebsites.net/"></iframe>
@@ -158,6 +160,7 @@ export default {
         { 
             id: 'pila-game', 
             title: 'Prototype 3D Platformer', 
+            clientName: 'Prototype 3D Platformer',
             type: 'web', 
             className: 'pila-game-background',
             text: [
@@ -276,6 +279,7 @@ export default {
         { 
             id: 'syfy', 
             title: 'Syfy Channel 20th Anniversary game', 
+            clientName: 'Syfy',
             type: 'web', 
             className: 'syfy-background',
             text: [
@@ -291,8 +295,12 @@ export default {
         {
             id: 'ghost',
             title: 'Ghost train builder',
+            clientName: 'Ghost Train Builder',
             type: 'web',
-            className: 'ghost-background',
+            className: 'ghost-background-2',
+            overlayContent: `
+                <div class="c-overlay__image ghost-background"></div>
+            `,
             text: [
                 `Ghost train builder was a side project we worked on for a few months leading up to Halloween. 
                 At the time we were keen to explore the Aframe framework and came up with this idea of a user being able to customise their own Ghost train ride.
@@ -300,6 +308,7 @@ export default {
                 `A few years prior to this project I had worked on another side project to allow for the setup of simple scenes in ThreeJS through AngularJS directives. 
                 So it was refreshing to use a framework that was developed along the same ideals. Because models could be defined by HTML, this allowed anyone on the team regardless of 3D experience to manipulate the levels.`,
                 `The core idea behind this was to uv unwrap all the building blocks onto a single texture and then swap these textures out to skin each room dynamically. The user had limited choices on lighting, theme and the monsters that would pop up.`,
+                `Featured in net magazine issue 291 April 2017`,
                 `Relevant technologies: <br/> <ul><li>Vue.js</li><li>Aframe</li><li>Three.js</li></ul>`,
                 `<a href="http://ghosttrainbuilder.com/">http://ghosttrainbuilder.com/</a>`
 
@@ -309,6 +318,7 @@ export default {
         { 
             id: 'advent', 
             title: 'Team Advent Calendar', 
+            clientName: 'TUX 2019 Advent Calendar',
             type: 'web', 
             className: 'advent-background',
             text: [
@@ -332,6 +342,7 @@ export default {
         { 
             id: 'island', 
             title: 'Procedural Islands', 
+            clientName: 'Procedural Islands',
             highlighted: false, 
             type: 'web', 
             className: 'island-background',
@@ -356,6 +367,7 @@ export default {
             id: 'landscape', 
             title: 'Low Poly Environment', 
             type: 'web', 
+            clientName: 'Green valley',
             className: 'pila-background',
             text: [
                 `
@@ -372,7 +384,7 @@ export default {
             ]
         },
         { id: 'weasel', title: 'Weasel character art', type: 'sketchfab', src: 'https://sketchfab.com/models/a995319e79e84c6a8df1ed8e5d3a58b0/embed?autospin=0.2&amp;preload=1&amp;transparent=0' },
-        { id: 'rice', title: 'Rice ball illustration', type: 'web', className: 'rice-background' },
+        { id: 'rice', title: 'Rice ball illustration', type: 'web', className: 'rice-background', clientName: '2D Illustration' },
         { 
             id: 'gea', 
             title: 'Halifax: Giving Extra Awards', 
@@ -422,7 +434,13 @@ export default {
             `
         ] 
     },
+
+    
+        { id: 'rlgol',clientName: 'Game of life', title: 'Coding exercise: Game Of Life', type: 'web', className: 'game-of-life' },
         { id: 'scottish-widows',clientName: 'Scottish Widows', title: 'Scottish Widows', type: 'web', className: 'scottish-widows-background' },
+
+        { id: 'su2c', clientName: 'Stand Up To Cancer', title: 'Stand Up To Cancer: Hackathon', type: 'web', className: 'su2c-background' },
+
         { id: 'heathrow', clientName: 'Heathrow', title: 'Heathrow - Kids go free', type: 'web', className: 'heathrow-background' },
         { id: 'lions', clientName: 'Standard Life Investments',  title: 'Lions 2017 Tour', type: 'web', className: 'lions-background' },
         { id: 'ssiesta', clientName: 'Naked Wines', title: 'Naked Wines: Supermarket Siesta', type: 'web', className: 'ssiesta-background' },

@@ -289,6 +289,16 @@ p {
   background-position: center top;
 }
 
+.no-webp .ghost-background-2 {
+  background-image: url("../images/ghost-train-mag.jpg");
+  background-position: center top;
+}
+
+.webp .ghost-background-2 {
+  background-image: url("../images/ghost-train-mag.webp");
+  background-position: center top;
+}
+
 .no-webp .lexus-background {
   background-image: url("../images/lexus.png");
   background-position: left top;
@@ -468,6 +478,27 @@ p {
   background-image: url("../images/rl-theatre-2.gif");
   background-position: center top;
 }
+
+.no-webp .game-of-life {
+  background-image: url("../images/rl-game-of-life-optimised.gif");
+  background-position: center center;
+}
+
+.webp .game-of-life {
+  background-image: url("../images/rl-game-of-life-optimised.gif");
+  background-position: center center;
+}
+
+.no-webp .su2c-background {
+  background-image: url("../images/su2c.png");
+  background-position: left top;
+}
+
+.webp .su2c-background {
+  background-image: url("../images/su2c.webp");
+  background-position: left top;
+}
+
 
 .webp .image-background,
 .no-webp .image-background {
