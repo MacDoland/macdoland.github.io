@@ -33,7 +33,7 @@ class Gallery {
                     </li>
                 {{?}}
                 {{?value.type == 'web'}}
-                    <li id="{{=value.id}}" class="c-gallery__item c-gallery__item--web c-grid__item image-background {{=value.className}}">
+                    <li id="{{=value.id}}" class="c-gallery__item c-gallery__item--web c-grid__item image-background" data-image-load="{{=value.imgUrl}}" data-image-class="{{=value.className}}">
                         {{?value.clientName}}<div class="c-gallery__item__client-name"><span>{{=value.clientName}}</span></div>{{?}}
                     </li>
                 {{?}}

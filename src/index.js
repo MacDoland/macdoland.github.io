@@ -1,33 +1,42 @@
-import doT from '../node_modules/dot/doT';
 import "./scss/main.scss";
-import componentManager from './js/component-manager';
+import ImageLoader from './js/image-loader.service';
 import Gallery from './js/gallery.component';
 import Overlay from './js/overlay.component';
 import galleryData from './json/gallery-data';
 
+(function () {
+    let data = galleryData.tiles;
+    let galleryHighlightElement = document.body.querySelector('#portfolio-highlight-grid')
+    let galleryElement = document.body.querySelector('#portfolio-grid')
+    let overlayElement = document.body.querySelector('#overlay')
+    let highlights = data.filter(item => item.highlighted);
+    let galleryItems = data.filter(item => !item.highlighted);
+    let gallery = new Gallery(galleryElement, galleryItems);
+    let galleryHighlight = new Gallery(galleryHighlightElement, highlights);
+    let overlay = new Overlay(overlayElement);
+    let overlayOpen = overlay.open.bind(overlay);
 
-//document.addEventListener("DOMContentLoaded", componentManager.init.bind(componentManager));
+    let loadImage = (element) => {
+        let url = element.getAttribute('data-image-load');
+        let className = element.getAttribute('data-image-class');
 
-let data = galleryData.tiles;
+        if (typeof (url) !== 'undefined' && typeof (className) !== 'undefined') {
+            ImageLoader.loadBackgroundImage(element, url, className);
+        }
+    };
 
-let galleryHighlightElement = document.body.querySelector('#portfolio-highlight-grid')
-let galleryElement = document.body.querySelector('#portfolio-grid')
-let overlayElement = document.body.querySelector('#overlay')
+    gallery.init();
+    galleryHighlight.init();
+    overlay.init();
 
-let highlights = data.filter(item => item.highlighted);
-let galleryItems = data.filter(item => !item.highlighted);
+    gallery.onItemClick(overlayOpen);
+    galleryHighlight.onItemClick(overlayOpen);
 
-let gallery = new Gallery(galleryElement, galleryItems);
-let galleryHighlight = new Gallery(galleryHighlightElement, highlights);
 
-let overlay = new Overlay(overlayElement);
-let overlayOpen = overlay.open.bind(overlay);
 
-gallery.init();
-galleryHighlight.init();
-overlay.init();
+    loadImage(document.body);
+    let imageBackgroundElements = Array.from(document.body.querySelectorAll('[data-image-load]'));
+    imageBackgroundElements.forEach(loadImage);
 
-gallery.onItemClick(overlayOpen);
-galleryHighlight.onItemClick(overlayOpen);
-
-document.body.style.visibility='visible';
+    document.body.style.visibility = 'visible';
+})();

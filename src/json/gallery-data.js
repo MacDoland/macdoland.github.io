@@ -1,11 +1,12 @@
 export default {
     tiles: [
-        { 
-            id: 'lexus', 
-            title: 'Lexus', 
+        {
+            id: 'lexus',
+            title: 'Lexus',
             clientName: 'Lexus',
-            type: 'web', 
-            className: 'lexus-background', 
+            type: 'web',
+            className: 'lexus-background',
+            imgUrl: './dist/images/lexus.png',
             highlighted: true,
             text: [
                 `
@@ -41,21 +42,21 @@ export default {
                 </p>
                 `
 
-            ] },
-
-
-            {
-                id: 'garden',
-                title: 'In the garden',
-                type: 'web',
-                className: 'garden-background',
-                clientName: 'In the garden',
-                highlighted: false,
-                overlayContent: `
+            ]
+        },
+        {
+            id: 'garden',
+            title: 'In the garden',
+            type: 'web',
+            className: 'garden-background',
+            imgUrl: './dist/images/garden-background.jpg',
+            clientName: 'In the garden',
+            highlighted: false,
+            overlayContent: `
                 <iframe src="https://sketchfab.com/models/75431eb321164f9689f6f98ef317f34f/embed?autospin=0.2&amp;preload=1&amp;transparent=0"></iframe>
             `,
-                text: [
-                    `
+            text: [
+                `
                 <p>This piece of work close to my heart. A side project I worked on last year that went through many months of iteration. 
                 I was looking for some practice on building out environments so decided to impose a size limition to that of a garden to help with scope and focus.</p>
     
@@ -79,15 +80,15 @@ export default {
                 
                 
                 `
-                ]
-    
-            },
+            ]
 
-        { 
-            id: 'egg-hunt', 
-            title: 'WIP Project Egg Hunt', 
-            type: 'web', 
-            className: 'hunt-background', 
+        },
+        {
+            id: 'egg-hunt',
+            title: 'WIP Project Egg Hunt',
+            type: 'web',
+            className: 'hunt-background',
+            imgUrl: './dist/images/hunt.png',
             clientName: 'Project Egg Hunt',
             highlighted: false,
             overlayContent: `
@@ -116,12 +117,13 @@ export default {
                 `
             ]
         },
-        { 
-            id: 'sailgp', 
-            title: 'SailGP', 
+        {
+            id: 'sailgp',
+            title: 'SailGP',
             clientName: 'SailGP',
-            type: 'web', 
-            className: 'sailgp-background', 
+            imgUrl: './dist/images/sailgp.png',
+            type: 'web',
+            className: 'sailgp-background',
             highlighted: true,
             text: [
                 `
@@ -157,11 +159,12 @@ export default {
                 `
             ]
         },
-        { 
-            id: 'pila-game', 
-            title: 'Prototype 3D Platformer', 
+        {
+            id: 'pila-game',
+            title: 'Prototype 3D Platformer',
             clientName: 'Prototype 3D Platformer',
-            type: 'web', 
+            imgUrl: './dist/images/pila-background.jpg',
+            type: 'web',
             className: 'pila-game-background',
             text: [
                 `
@@ -179,7 +182,7 @@ export default {
 
                 `
             ],
-            overlayContent:`
+            overlayContent: `
             
             <iframe src="https://player.vimeo.com/video/204263108" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 
@@ -187,12 +190,13 @@ export default {
             `
 
         },
-        { 
-            id: 'funeral', 
-            title: 'SunLife Funeral Mapper', 
+        {
+            id: 'funeral',
+            title: 'SunLife Funeral Mapper',
             clientName: 'SunLife',
-            type: 'web', 
+            type: 'web',
             className: 'funeral-background',
+            imgUrl: './dist/images/funeral-mapper.png',
             highlighted: true,
             text: [
                 `
@@ -203,12 +207,13 @@ export default {
                     `
             ]
         },
-        { 
-            id: 'efl', 
-            title: 'EFL Match Centre', 
+        {
+            id: 'efl',
+            title: 'EFL Match Centre',
             clientName: 'EFL',
-            type: 'web', 
-            className: 'efl-background', 
+            type: 'web',
+            className: 'efl-background',
+            imgUrl: './dist/images/efl-match-center.jpg',
             highlighted: true,
             text: [
                 `
@@ -231,6 +236,7 @@ export default {
             clientName: 'BBC',
             type: 'web',
             className: 'unearthed-background',
+            imgUrl: './dist/images/unearthed.jpg',
             highlighted: true,
             text: [
                 `
@@ -259,13 +265,14 @@ export default {
                 `
             ]
         },
-      
-        { 
-            id: 'royal-london', 
-            title: 'Royal London', 
+
+        {
+            id: 'royal-london',
+            title: 'Royal London',
             clientName: 'Royal London',
-            type: 'web', 
+            type: 'web',
             className: 'royal-london-background',
+            imgUrl: './dist/images/royal-london.png',
             text: [
                 `
                 <p>I spent the first 14 months of my employment with Realise on site at Royal Londons offices. There I was part of a team of developers working on Royal Londons rebranding. One particular highlight was the navigation system which consisted of a grid of boxes of various sizes with interesting CSS transitions. 
@@ -276,12 +283,14 @@ export default {
             ]
 
         },
-        { 
-            id: 'syfy', 
-            title: 'Syfy Channel 20th Anniversary game', 
+        {
+            id: 'syfy',
+            title: 'Syfy Channel 20th Anniversary game',
             clientName: 'Syfy',
-            type: 'web', 
+            imgUrl: './dist/images/syfy20.jpg',
+            type: 'web',
             className: 'syfy-background',
+            overlayContent: '<div class="c-overlay__image syfy-gif-background"></div>',
             text: [
                 `
                     <p>In partnership withh Picnic Studio we built an interactive "Where's wally?" style scene to celebrate the Syfy channels 20th anniversary.  
@@ -298,6 +307,7 @@ export default {
             clientName: 'Ghost Train Builder',
             type: 'web',
             className: 'ghost-background-2',
+            imgUrl: './dist/images/ghost-train-mag.jpg',
             overlayContent: `
                 <div class="c-overlay__image ghost-background"></div>
             `,
@@ -315,12 +325,13 @@ export default {
             ]
         },
         { id: 'bird', title: 'Steller\'s Jay', type: 'sketchfab', src: 'https://sketchfab.com/models/9cfe5bd6f132405fbf48bd004fa688bd/embed?autospin=0.2&amp;preload=1&amp;transparent=0' },
-        { 
-            id: 'advent', 
-            title: 'Team Advent Calendar', 
+        {
+            id: 'advent',
+            title: 'Team Advent Calendar',
             clientName: 'TUX 2019 Advent Calendar',
-            type: 'web', 
+            type: 'web',
             className: 'advent-background',
+            imgUrl: './dist/images/advent-calendar.png',
             text: [
                 `
                     <p>On the lead up to Christmas 2019 a few members of the team decided to band together to organise a team advent calendar.</p>
@@ -339,13 +350,14 @@ export default {
             ]
         },
         { id: 'plant', title: 'Potted plant', type: 'sketchfab', src: 'https://sketchfab.com/models/e92dd6ae7eb242018642bb40a91e744e/embed?autospin=0.2&amp;autostart=0&amp;transparent=0' },
-        { 
-            id: 'island', 
-            title: 'Procedural Islands', 
+        {
+            id: 'island',
+            title: 'Procedural Islands',
             clientName: 'Procedural Islands',
-            highlighted: false, 
-            type: 'web', 
+            highlighted: false,
+            type: 'web',
             className: 'island-background',
+            imgUrl: './dist/images/islands.png',
             overlayContent: `
                 <iframe src="./proc-islands"></iframe>
             `,
@@ -359,15 +371,14 @@ export default {
                 `
             ]
 
-         },
+        },
         { id: 'pila', title: 'Pila', type: 'sketchfab', src: 'https://sketchfab.com/models/ace7d3e35fea473599e10d2c62e7ab56/embed?autospin=0.2&amp;preload=1&amp;transparent=0' },
-      
-      
-        { 
-            id: 'landscape', 
-            title: 'Low Poly Environment', 
-            type: 'web', 
+        {
+            id: 'landscape',
+            title: 'Low Poly Environment',
+            type: 'web',
             clientName: 'Green valley',
+            imgUrl: './dist/images/pila-background.jpg',
             className: 'pila-background',
             text: [
                 `
@@ -384,14 +395,22 @@ export default {
             ]
         },
         { id: 'weasel', title: 'Weasel character art', type: 'sketchfab', src: 'https://sketchfab.com/models/a995319e79e84c6a8df1ed8e5d3a58b0/embed?autospin=0.2&amp;preload=1&amp;transparent=0' },
-        { id: 'rice', title: 'Rice ball illustration', type: 'web', className: 'rice-background', clientName: '2D Illustration' },
-        { 
-            id: 'gea', 
-            title: 'Halifax: Giving Extra Awards', 
-            type: 'web', 
+        {
+            id: 'rice',
+            title: 'Rice ball illustration',
+            type: 'web',
+            className: 'rice-background',
+            imgUrl: './dist/images/joe-mcdowall-itadakimasu.jpg',
+            clientName: '2D Illustration'
+        },
+        {
+            id: 'gea',
+            title: 'Halifax: Giving Extra Awards',
+            type: 'web',
             clientName: 'Halifax',
-            className: 'gea-background', 
-            highlighted: true, 
+            className: 'gea-background',
+            imgUrl: './dist/images/gea-map.jpg',
+            highlighted: true,
             overlayContent: '<div class="c-overlay__image gea-background-2"></div>',
             text: [
                 `
@@ -407,17 +426,18 @@ export default {
                 `
             ]
 
-     },
+        },
 
-     { 
-        id: 'green-city', 
-        title: 'BBC Green City', 
-        clientName: 'BBC',
-        type: 'web', 
-        className: 'green-city-background', 
-        highlighted: true,
-        text:[
-            `
+        {
+            id: 'green-city',
+            title: 'BBC Green City',
+            clientName: 'BBC',
+            type: 'web',
+            className: 'green-city-background',
+            imgUrl: './dist/images/green-city.png',
+            highlighted: true,
+            text: [
+                `
             <p>
             This piece of work was the first commerical project I've worked on where I didn't write any code. 
             The BBC were looking for a short video sequence of a prototype scene that demonstrated their green city idea. 
@@ -432,22 +452,73 @@ export default {
             A camera animation sequence was captured for each city version and then composited together by our motion graphics designer.</p>
 
             `
-        ] 
-    },
+            ]
+        },
+        {
+            id: 'rlgol',
+            clientName: 'Game of life',
+            title: 'Coding exercise: Game Of Life',
+            type: 'web',
+            className: 'game-of-life',
+            imgUrl: './dist/images/rl-game-of-life.png',
+            overlayContent: '<div class="c-overlay__image game-of-life-gif"></div>'
+        },
+        {
+            id: 'scottish-widows',
+            clientName: 'Scottish Widows',
+            imgUrl: './dist/images/scottish-widows.png',
+            title: 'Scottish Widows',
+            type: 'web',
+            className: 'scottish-widows-background'
+        },
 
-    
-        { id: 'rlgol',clientName: 'Game of life', title: 'Coding exercise: Game Of Life', type: 'web', className: 'game-of-life' },
-        { id: 'scottish-widows',clientName: 'Scottish Widows', title: 'Scottish Widows', type: 'web', className: 'scottish-widows-background' },
+        {
+            id: 'su2c',
+            clientName: 'Stand Up To Cancer',
+            imgUrl: './dist/images/su2c.png',
+            title: 'Stand Up To Cancer: Hackathon',
+            type: 'web',
+            className: 'su2c-background'
+        },
 
-        { id: 'su2c', clientName: 'Stand Up To Cancer', title: 'Stand Up To Cancer: Hackathon', type: 'web', className: 'su2c-background' },
-
-        { id: 'heathrow', clientName: 'Heathrow', title: 'Heathrow - Kids go free', type: 'web', className: 'heathrow-background' },
-        { id: 'lions', clientName: 'Standard Life Investments',  title: 'Lions 2017 Tour', type: 'web', className: 'lions-background' },
-        { id: 'ssiesta', clientName: 'Naked Wines', title: 'Naked Wines: Supermarket Siesta', type: 'web', className: 'ssiesta-background' },
-        { id: 'rl-theatre',  clientName: 'Royal London', title: 'Royal London: Theatre Of Life', type: 'web', className: 'theatre-background', overlayContent: '<div class="c-overlay__image theatre-background-2"></div>', highlighted: true, text: [
-            `
+        {
+            id: 'heathrow',
+            clientName: 'Heathrow',
+            imgUrl: './dist/images/heathrow.png',
+            title: 'Heathrow - Kids go free',
+            type: 'web',
+            className: 'heathrow-background'
+        },
+        {
+            id: 'lions',
+            clientName: 'Standard Life Investments',
+            imgUrl: './dist/images/lions.png',
+            title: 'Lions 2017 Tour',
+            type: 'web',
+            className: 'lions-background'
+        },
+        {
+            id: 'ssiesta',
+            clientName: 'Naked Wines',
+            imgUrl: './dist/images/ssiesta.png',
+            title: 'Naked Wines: Supermarket Siesta',
+            type: 'web',
+            className: 'ssiesta-background'
+        },
+        {
+            id: 'rl-theatre',
+            clientName: 'Royal London',
+            imgUrl: './dist/images/rl-theatre.jpg',
+            title: 'Royal London: Theatre Of Life',
+            type: 'web',
+            className: 'theatre-background',
+            overlayContent: '<div class="c-overlay__image theatre-background-2"></div>',
+            highlighted: true,
+            text: [
+                `
                 <p>Royal London's Theatre of Life was an interactive piece which was put together to teach customers about life insurance before they made their application. It was mainly done using layered gifs/PNG sequences and CSS3 animations all orchestrated by a little bit of timeline JavaScript.</p>
             `
-        ] }
+            ]
+        }
     ]
 };
