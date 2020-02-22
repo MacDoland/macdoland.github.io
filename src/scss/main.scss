@@ -16,7 +16,11 @@ body {
   background-size: 400px;
 }
 
-.body-background {
+.no-webp .body-background {
+  background-image: url("../images/gaming-pattern.png");
+}
+
+.webp .body-background {
   background-image: url("../images/gaming-pattern.png");
 }
 
