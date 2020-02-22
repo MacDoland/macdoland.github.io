@@ -1,15 +1,18 @@
 class ImageLoader {
     static loadBackgroundImage(element, url, className) {
-        if (element && url && className && url !== 'undefined') {
-            if (Modernizr && Modernizr.webp) {
-                url = url.replace(/(.png|.jpg)/g, '.webp');
-            }
+        if (Modernizr && element && url && className && url !== 'undefined') {
 
-            let image = new Image();
-            image.onload = () => {
-                element.classList.add(className);
-            }
-            image.src = url;
+            Modernizr.on('webp', (hasWebp) => {
+                if (hasWebp) {
+                    url = url.replace(/(.png|.jpg)/g, '.webp');
+                }
+
+                let image = new Image();
+                image.onload = () => {
+                    element.classList.add(className);
+                }
+                image.src = url;
+            });
         }
     }
 }
