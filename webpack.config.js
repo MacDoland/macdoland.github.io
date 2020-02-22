@@ -4,6 +4,7 @@ const nodeExternals = require('webpack-node-externals');
 const TerserJSPlugin = require('terser-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   entry: { main: './src/index.js' },
@@ -42,32 +43,31 @@ module.exports = {
           'sass-loader',
         ],
       },
-      {
-        test: /.(gif|png|jpe?g|webp|svg)$/i,
-        use: [
-           {
-            loader: 'file-loader',
-            options: {
-              name: '[name].[ext]',
-              publicPath: function(url) {
-                return '/dist/'
-            },
-            }
-           },
-          {
-            loader: 'image-webpack-loader',
-            options: {
-              disable: false,
-              webp: {
-                quality: 80
-              },
-              publicPath: function(url) {
-                return '/dist/'
-            },
-            }
-          }
-        ]
-      },
+      // {
+      //   test: /.(gif|png|jpe?g|webp|svg)$/i,
+      //   exclude: /node_modules/,
+      //   use: [
+      //     {
+      //       loader: 'file-loader',
+      //       options: {
+      //         name: '[name].[ext]',
+      //         outputPath: 'images'
+      //       }
+      //     }
+      //     // {
+      //     //   loader: 'image-webpack-loader',
+      //     //   options: {
+      //     //     disable: false,
+      //     //     webp: {
+      //     //       quality: 80
+      //     //     },
+      //     //     publicPath: function(url) {
+      //     //       return '/dist/'
+      //     //   },
+      //     //   }
+      //     // }
+      //   ]
+      // },
       {
         test: /\.svg$/,
         loader: 'svg-inline-loader'
@@ -77,6 +77,9 @@ module.exports = {
   plugins: [
     new MiniCssExtractPlugin({
       filename: 'styles.css',
-    })
+    }),
+    new CopyWebpackPlugin([
+      {from:'src/images',to:'../images'} 
+  ]), 
   ]
 };
