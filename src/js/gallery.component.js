@@ -34,7 +34,9 @@ class Gallery {
                 {{?}}
                 {{?value.type == 'web'}}
                     <li id="{{=value.id}}" class="c-gallery__item c-gallery__item--web c-grid__item image-background" data-image-load="{{=value.imgUrl}}" data-image-class="{{=value.className}}">
+                    <a href="#" role="button">
                         {{?value.clientName}}<div class="c-gallery__item__client-name"><span>{{=value.clientName}}</span></div>{{?}}
+                    </a>
                     </li>
                 {{?}}
                 {{?value.type == 'sketchfab'}}

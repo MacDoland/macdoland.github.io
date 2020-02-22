@@ -65,6 +65,14 @@
       transition: transform 0.5s;
       opacity: 1;
     }
+
+    a {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+    }
   }
 }
 
@@ -72,16 +80,6 @@
 .image-background {
   background-position: center center;
   background-size: cover;
-}
-
-.image-background a {
-  background-color: rgba(0, 0, 0, 0.85);
-  color: #fff;
-  display: block;
-  position: absolute;
-  padding: 10px;
-  bottom: 0;
-  right: 0;
 }
 
 .no-webp .pila-background {
