@@ -31,14 +31,14 @@ class Overlay {
                 {{=it.overlayContent}}
              {{?}}
              {{? !it.overlayContent }}
-                <div class="c-overlay__image {{=it.className}}"></div>
+                <div class="c-overlay__image-container"><img class="c-overlay__image" src="{{=it.imgUrl}}"/></div>
              {{?}}
 
                 <div class="c-overlay__details">
-                    <h2 id="{{=it.id+'overlay'}}">{{=it.title}}</h2>
+                    <h2 class="c-overlay__heading" id="{{=it.id+'overlay'}}">{{=it.title}}</h2>
                     {{? it.text }}
                         {{~it.text :text}}
-                            <div id="{{=it.id+'desc'}}">{{=text}}</div>
+                            <div class="c-overlay__content" id="{{=it.id+'desc'}}">{{=text}}</div>
                         {{~}}
                     {{?}}
                 </div>

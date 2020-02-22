@@ -6,7 +6,7 @@ export default {
             clientName: 'Lexus',
             type: 'web',
             className: 'lexus-background',
-            imgUrl: './dist/images/lexus.png',
+            imgUrl: './images/lexus.png',
             highlighted: true,
             text: [
                 `
@@ -49,7 +49,7 @@ export default {
             title: 'In the garden',
             type: 'web',
             className: 'garden-background',
-            imgUrl: './dist/images/garden-background.jpg',
+            imgUrl: './images/garden-background.jpg',
             clientName: 'In the garden',
             highlighted: false,
             overlayContent: `
@@ -88,7 +88,7 @@ export default {
             title: 'WIP Project Egg Hunt',
             type: 'web',
             className: 'hunt-background',
-            imgUrl: './dist/images/hunt.png',
+            imgUrl: './images/hunt.png',
             clientName: 'Project Egg Hunt',
             highlighted: false,
             overlayContent: `
@@ -121,7 +121,7 @@ export default {
             id: 'sailgp',
             title: 'SailGP',
             clientName: 'SailGP',
-            imgUrl: './dist/images/sailgp.png',
+            imgUrl: './images/sailgp.png',
             type: 'web',
             className: 'sailgp-background',
             highlighted: true,
@@ -163,7 +163,7 @@ export default {
             id: 'pila-game',
             title: 'Prototype 3D Platformer',
             clientName: 'Prototype 3D Platformer',
-            imgUrl: './dist/images/pila-background.jpg',
+            imgUrl: './images/pila-background.jpg',
             type: 'web',
             className: 'pila-game-background',
             text: [
@@ -196,7 +196,7 @@ export default {
             clientName: 'SunLife',
             type: 'web',
             className: 'funeral-background',
-            imgUrl: './dist/images/funeral-mapper.png',
+            imgUrl: './images/funeral-mapper.png',
             highlighted: true,
             text: [
                 `
@@ -213,7 +213,7 @@ export default {
             clientName: 'EFL',
             type: 'web',
             className: 'efl-background',
-            imgUrl: './dist/images/efl-match-center.jpg',
+            imgUrl: './images/efl-match-center.jpg',
             highlighted: true,
             text: [
                 `
@@ -236,7 +236,7 @@ export default {
             clientName: 'BBC',
             type: 'web',
             className: 'unearthed-background',
-            imgUrl: './dist/images/unearthed.jpg',
+            imgUrl: './images/unearthed.jpg',
             highlighted: true,
             text: [
                 `
@@ -272,7 +272,7 @@ export default {
             clientName: 'Royal London',
             type: 'web',
             className: 'royal-london-background',
-            imgUrl: './dist/images/royal-london.png',
+            imgUrl: './images/royal-london.png',
             text: [
                 `
                 <p>I spent the first 14 months of my employment with Realise on site at Royal Londons offices. There I was part of a team of developers working on Royal Londons rebranding. One particular highlight was the navigation system which consisted of a grid of boxes of various sizes with interesting CSS transitions. 
@@ -287,7 +287,7 @@ export default {
             id: 'syfy',
             title: 'Syfy Channel 20th Anniversary game',
             clientName: 'Syfy',
-            imgUrl: './dist/images/syfy20.jpg',
+            imgUrl: './images/syfy20.jpg',
             type: 'web',
             className: 'syfy-background',
             overlayContent: '<div class="c-overlay__image syfy-gif-background"></div>',
@@ -307,7 +307,7 @@ export default {
             clientName: 'Ghost Train Builder',
             type: 'web',
             className: 'ghost-background-2',
-            imgUrl: './dist/images/ghost-train-mag.jpg',
+            imgUrl: './images/ghost-train-mag.jpg',
             overlayContent: `
                 <div class="c-overlay__image ghost-background"></div>
             `,
@@ -331,7 +331,7 @@ export default {
             clientName: 'TUX 2019 Advent Calendar',
             type: 'web',
             className: 'advent-background',
-            imgUrl: './dist/images/advent-calendar.png',
+            imgUrl: './images/advent-calendar.png',
             text: [
                 `
                     <p>On the lead up to Christmas 2019 a few members of the team decided to band together to organise a team advent calendar.</p>
@@ -357,7 +357,7 @@ export default {
             highlighted: false,
             type: 'web',
             className: 'island-background',
-            imgUrl: './dist/images/islands.png',
+            imgUrl: './images/islands.png',
             overlayContent: `
                 <iframe src="./proc-islands"></iframe>
             `,
@@ -378,7 +378,7 @@ export default {
             title: 'Low Poly Environment',
             type: 'web',
             clientName: 'Green valley',
-            imgUrl: './dist/images/pila-background.jpg',
+            imgUrl: './images/pila-background.jpg',
             className: 'pila-background',
             text: [
                 `
@@ -400,7 +400,7 @@ export default {
             title: 'Rice ball illustration',
             type: 'web',
             className: 'rice-background',
-            imgUrl: './dist/images/joe-mcdowall-itadakimasu.jpg',
+            imgUrl: './images/joe-mcdowall-itadakimasu.jpg',
             clientName: '2D Illustration'
         },
         {
@@ -409,7 +409,7 @@ export default {
             type: 'web',
             clientName: 'Halifax',
             className: 'gea-background',
-            imgUrl: './dist/images/gea-map.jpg',
+            imgUrl: './images/gea-map.jpg',
             highlighted: true,
             overlayContent: '<div class="c-overlay__image gea-background-2"></div>',
             text: [
@@ -434,7 +434,7 @@ export default {
             clientName: 'BBC',
             type: 'web',
             className: 'green-city-background',
-            imgUrl: './dist/images/green-city.png',
+            imgUrl: './images/green-city.png',
             highlighted: true,
             text: [
                 `
@@ -460,13 +460,13 @@ export default {
             title: 'Coding exercise: Game Of Life',
             type: 'web',
             className: 'game-of-life',
-            imgUrl: './dist/images/rl-game-of-life.png',
+            imgUrl: './images/rl-game-of-life.png',
             overlayContent: '<div class="c-overlay__image game-of-life-gif"></div>'
         },
         {
             id: 'scottish-widows',
             clientName: 'Scottish Widows',
-            imgUrl: './dist/images/scottish-widows.png',
+            imgUrl: './images/scottish-widows.png',
             title: 'Scottish Widows',
             type: 'web',
             className: 'scottish-widows-background'
@@ -475,7 +475,7 @@ export default {
         {
             id: 'su2c',
             clientName: 'Stand Up To Cancer',
-            imgUrl: './dist/images/su2c.png',
+            imgUrl: './images/su2c.png',
             title: 'Stand Up To Cancer: Hackathon',
             type: 'web',
             className: 'su2c-background'
@@ -484,7 +484,7 @@ export default {
         {
             id: 'heathrow',
             clientName: 'Heathrow',
-            imgUrl: './dist/images/heathrow.png',
+            imgUrl: './images/heathrow.png',
             title: 'Heathrow - Kids go free',
             type: 'web',
             className: 'heathrow-background'
@@ -492,7 +492,7 @@ export default {
         {
             id: 'lions',
             clientName: 'Standard Life Investments',
-            imgUrl: './dist/images/lions.png',
+            imgUrl: './images/lions.png',
             title: 'Lions 2017 Tour',
             type: 'web',
             className: 'lions-background'
@@ -500,7 +500,7 @@ export default {
         {
             id: 'ssiesta',
             clientName: 'Naked Wines',
-            imgUrl: './dist/images/ssiesta.png',
+            imgUrl: './images/ssiesta.png',
             title: 'Naked Wines: Supermarket Siesta',
             type: 'web',
             className: 'ssiesta-background'
@@ -508,7 +508,7 @@ export default {
         {
             id: 'rl-theatre',
             clientName: 'Royal London',
-            imgUrl: './dist/images/rl-theatre.jpg',
+            imgUrl: './images/rl-theatre.jpg',
             title: 'Royal London: Theatre Of Life',
             type: 'web',
             className: 'theatre-background',

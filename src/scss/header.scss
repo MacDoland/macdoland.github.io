@@ -1,0 +1,103 @@
+.c-header {
+  background: map-get($colors, "primary");;
+  border-bottom: 1px solid map-get($colors, "tertiary");;
+  padding: 40px 0;
+  @media (min-width: $breakpoint-small) {
+    padding: 0;
+  }
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    max-width: 1920px;
+    margin: 20px auto;
+    height: 240px;
+
+    @media (min-width: $breakpoint-small) {
+      flex-direction: row;
+      height: 320px;
+      margin: 0 auto;
+      padding: 0 40px;
+    }
+  }
+  @media (min-width: $breakpoint-small) {
+    height: 320px;
+  }
+
+  &__heading {
+    font-size: 32px;
+    line-height: 32px;
+    margin: 0 10px;
+    text-align: center;
+
+    @media (min-width: $breakpoint-small) {
+      font-size: 128px;
+      line-height: 128px;
+      margin: 0 40px;
+      text-align: right;
+    }
+  }
+
+  &__image {
+    width: 128px;
+    height: 128px;
+    border-radius: 128px;
+    border: 2px solid map-get($colors, "tertiary");
+    overflow: hidden;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    position: relative;
+    z-index: 0;
+
+    &::before {
+      background-image: map-get($colors, "secondary");
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      z-index: 0;
+    }
+
+    &::after {
+      background-image: map-get($colors, "secondary");;
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      z-index: 10;
+    }
+
+    @media (min-width: $breakpoint-small) {
+      width: 240px;
+      height: 240px;
+      border-radius: 240px;
+    }
+  }
+
+  &__social {
+    text-align: right;
+    margin: 0 10px;
+    padding: 15px 0;
+    @media (min-width: $breakpoint-small) {
+      margin: 0 40px;
+      padding: 0;
+    }
+  }
+
+  &__social__link {
+    &:link,
+    &:visited,
+    &:hover,
+    &:active {
+      color: map-get($colors, "secondary");;
+      margin: 5px;
+    }
+  }
+}

@@ -1,4 +1,6 @@
+@import "./settings.scss";
 @import "./reset.scss";
+@import "./header.scss";
 @import "./grid.scss";
 @import "./gallery.component.scss";
 @import "./overlay.component.scss";
@@ -6,7 +8,7 @@
 
 html,
 body {
-  background: #292929;
+  background: map-get($colors, "secondary");
   height: auto;
   width: 100%;
 }
@@ -14,6 +16,18 @@ body {
 body {
   background-repeat: repeat;
   background-size: 400px;
+  color: map-get($colors, "tertiary");
+  font-family: "Open Sans Condensed", Arial, sans-serif;
+  font-size: 16px;
+  letter-spacing: 1px;
+  line-height: 20px;
+  height: 100%;
+  width: 100%;
+
+  @media (min-width: $breakpoint-small) {
+    font-size: 24px;
+    line-height: 24px;
+  }
 }
 
 .no-webp .body-background {
@@ -28,80 +42,11 @@ body {
   height: auto;
 }
 
-header {
-  background: #498657;
-  border-bottom: 1px solid #fff;
-  padding: 40px 0;
-  @media (min-width: 768px) {
-    padding: 0;
-  }
-
-  .inner {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 20px;
-    max-width: 1920px;
-    margin: 20px auto;
-    height: 240px;
-
-    @media (min-width: 768px) {
-      flex-direction: row;
-      height: 320px;
-      margin: 0 auto;
-      padding: 0 40px;
-    }
-  }
-  @media (min-width: 768px) {
-    height: 320px;
-  }
-
-  h1 {
-    font-size: 32px;
-    line-height: 32px;
-    margin: 0 10px;
-    text-align: center;
-
-    @media (min-width: 768px) {
-      font-size: 128px;
-      line-height: 128px;
-      margin: 0 40px;
-      text-align: right;
-    }
-  }
-
-  div.image-background {
-    width: 128px;
-    height: 128px;
-    border-radius: 128px;
-    border: 2px solid #fff;
-    overflow: hidden;
-    @media (min-width: 768px) {
-      width: 240px;
-      height: 240px;
-      border-radius: 240px;
-    }
-  }
-
-  .social {
-    text-align: right;
-    margin: 0 10px;
-    padding:15px 0;
-    @media (min-width: 768px) {
-      margin: 0 40px;
-      padding: 0;
-    }
-
-    a:link, a:visited, a:hover, a:active {
-      color: #292929;
-      margin: 5px;
-    }
-  }
-}
-
-a:link, a:visited, a:hover, a:active {
-  color: #66a574;
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color: map-get($colors, "primary");
 }
 
 footer {
@@ -117,27 +62,12 @@ footer {
   overflow: hidden;
 }
 
-body {
-  color: #fff;
-  font-family: "Open Sans Condensed", Arial, sans-serif;
-  font-size: 16px;
-  letter-spacing: 1px;
-  line-height: 20px;
-  height: 100%;
-  width: 100%;
-
-  @media (min-width: 768px) {
-    font-size: 24px;
-    line-height: 24px;
-  }
-}
-
 h2 {
   font-size: 24px;
   line-height: 24px;
   margin: 5px 0 10px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $breakpoint-small) {
     margin: 10px 0 20px;
   }
 }
@@ -155,36 +85,7 @@ p {
   max-height: 100%;
   text-align: right;
   text-transform: uppercase;
-  color: #fff;
-}
-
-.profile {
-  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-  filter: grayscale(100%);
-  position: relative;
-  z-index: 0;
-}
-
-.profile::before {
-  background-image: #292929;
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  z-index: 0;
-}
-
-.profile::after {
-  background-image: #292929;
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  z-index: 10;
+  color: map-get($colors, "tertiary");;
 }
 
 .section-block {
