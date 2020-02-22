@@ -11,11 +11,19 @@
     box-sizing: border-box;
     margin: 5px 0;
     height: 300px;
-    width: 410px;
+    width: 460px;
     max-width: 100%;
 
-    @media (min-width: 768px) { 
+    @media (min-width: $breakpoint-small) { 
       margin: 1px;
+    }
+
+    @media (min-width: $breakpoint-large) {
+      width: 410px;
+    }
+    
+    @media (min-width: $breakpoint-extra-large) {
+      width: 460px;
     }
   }
 
