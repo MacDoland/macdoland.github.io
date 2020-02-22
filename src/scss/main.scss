@@ -17,11 +17,11 @@ body {
 }
 
 .no-webp .body-background {
-  background-image: url("../images/gaming-pattern.png");
+  background-image: url("/dist/gaming-pattern.png");
 }
 
 .webp .body-background {
-  background-image: url("../images/gaming-pattern.webp");
+  background-image: url("/dist/gaming-pattern.webp");
 }
 
 #portfolio-grid {
