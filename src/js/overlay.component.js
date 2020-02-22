@@ -23,7 +23,7 @@ class Overlay {
         this.template = doT.template(`
             <div class="c-overlay {{? it.isOpen }}c-overlay--is-open{{?}}" role="dialog" aria-modal="true" aria-labelledby="{{=it.id+'overlay'}}" aria-describedby="{{=it.id+'desc'}}"  >
             <div class="c-overlay__outer">
-            <button class="c-overlay__close-button close"><span>Close</span></button>
+            <button class="c-overlay__close-button close" tabindex="-1"><span>Close</span></button>
 
              <div class="c-overlay__inner">
 
