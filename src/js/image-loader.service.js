@@ -9,7 +9,7 @@ class ImageLoader {
 
                 let image = new Image();
                 image.onerror = () => {
-                    alert("There was an error loading image: " + url);
+                    element.classList.add(className);
                 }
                 image.onload = () => {
                     element.classList.add(className);
