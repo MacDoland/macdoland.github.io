@@ -459,7 +459,7 @@ export default {
             clientName: 'Game of life',
             title: 'Coding exercise: Game Of Life',
             type: 'web',
-            className: 'game-of-life',
+            className: 'game-of-life-gif',
             imgUrl: './images/rl-game-of-life.png',
             overlayContent: '<div class="c-overlay__image game-of-life-gif"></div>',
             text: [
