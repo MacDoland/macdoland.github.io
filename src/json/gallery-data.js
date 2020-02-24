@@ -312,15 +312,15 @@ export default {
                 <div class="c-overlay__image ghost-background"></div>
             `,
             text: [
-                `Ghost train builder was a side project we worked on for a few months leading up to Halloween. 
+                `<p>Ghost train builder was a side project we worked on for a few months leading up to Halloween. 
                 At the time we were keen to explore the Aframe framework and came up with this idea of a user being able to customise their own Ghost train ride.
-                My responsibilities on the project included building 3D models for the rooms, rides and monsters but also a lot of the JavaScript to make the cart follow its course.`,
-                `A few years prior to this project I had worked on another side project to allow for the setup of simple scenes in ThreeJS through AngularJS directives. 
-                So it was refreshing to use a framework that was developed along the same ideals. Because models could be defined by HTML, this allowed anyone on the team regardless of 3D experience to manipulate the levels.`,
-                `The core idea behind this was to uv unwrap all the building blocks onto a single texture and then swap these textures out to skin each room dynamically. The user had limited choices on lighting, theme and the monsters that would pop up.`,
-                `Featured in net magazine issue 291 April 2017`,
-                `Relevant technologies: <br/> <ul><li>Vue.js</li><li>Aframe</li><li>Three.js</li></ul>`,
-                `<a href="http://ghosttrainbuilder.com/">http://ghosttrainbuilder.com/</a>`
+                My responsibilities on the project included building 3D models for the rooms, rides and monsters but also a lot of the JavaScript to make the cart follow its course.</p>
+                <p>A few years prior to this project I had worked on another side project to allow for the setup of simple scenes in ThreeJS through AngularJS directives. 
+                So it was refreshing to use a framework that was developed along the same ideals. Because models could be defined by HTML, this allowed anyone on the team regardless of 3D experience to manipulate the levels.</p>
+                <p>The core idea behind this was to uv unwrap all the building blocks onto a single texture and then swap these textures out to skin each room dynamically. The user had limited choices on lighting, theme and the monsters that would pop up.</p>
+                <p>Featured in net magazine issue 291 April 2017</p>
+                <p>Relevant technologies: <br/> <ul><li>Vue.js</li><li>Aframe</li><li>Three.js</li></ul></p>
+                <p><a href="http://ghosttrainbuilder.com/">http://ghosttrainbuilder.com/</a></p>`
 
             ]
         },

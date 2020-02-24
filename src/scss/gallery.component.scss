@@ -360,11 +360,13 @@
 .no-webp .theatre-background-2 {
   background-image: url("/images/rl-theatre-2.gif");
   background-position: center top;
+  background-repeat: no-repeat;
 }
 
 .webp .theatre-background-2 {
   background-image: url("/images/rl-theatre-2.gif");
   background-position: center top;
+  background-repeat: no-repeat;
 }
 
 .no-webp .game-of-life {

@@ -76,6 +76,7 @@
     }
 
     #{$root}__image {
+      background-size: cover; 
       width: 100%;
       @media (min-width: $breakpoint-medium) {
         width: 100%;
