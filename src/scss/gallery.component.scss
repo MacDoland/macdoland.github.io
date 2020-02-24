@@ -370,16 +370,19 @@
 .no-webp .game-of-life {
   background-image: url("/images/rl-game-of-life.png");
   background-position: center center;
+  background-repeat: no-repeat;
 }
 
 .webp .game-of-life {
   background-image: url("/images/rl-game-of-life.webp");
   background-position: center center;
+  background-repeat: no-repeat;
 }
 
 .game-of-life-gif {
   background-image: url("/images/rl-game-of-life-optimised.gif");
   background-position: center center;
+  background-repeat: no-repeat;
 }
 
 

@@ -461,7 +461,17 @@ export default {
             type: 'web',
             className: 'game-of-life',
             imgUrl: './images/rl-game-of-life.png',
-            overlayContent: '<div class="c-overlay__image game-of-life-gif"></div>'
+            overlayContent: '<div class="c-overlay__image game-of-life-gif"></div>',
+            text: [
+                `
+                    <p></p>
+                    <p>In feburary 2018 I set a challenge to the team to build an interactive project in collaborative isolation. Each entrant was given a number of isolated problems to solve that once combined with other peoples pieces put together to solve the solution.</p>
+                    <p>The tasks ranged in complexity and the entrants were given the option to indicate how much involvement they wanted. This mean that most people were able to contribute, whereas in the past they may have resisted due to the levels of commitement.</p> 
+                    <p>Often having completed their task the entrant would ask for another, and so there were a number of duplicate tasks, but that was fine. This challenge hinged on setting out well described requirements, and each task was sent to individuals in secret.</p>
+                    <p>Once all the entries were in we place the functions in a folder, and due to carefully selected naming and exporting of the functions we revealed the final solution, which was the game of life.</p>
+                    <p><a href="https://github.com/MacDoland/realise-feb-2018-challenge">https://github.com/MacDoland/realise-feb-2018-challenge</a></p>
+                `
+            ]
         },
         {
             id: 'scottish-widows',
