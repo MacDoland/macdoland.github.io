@@ -74,6 +74,27 @@ export default {
 
         },
         {
+            id: 'island',
+            title: 'Procedural Islands',
+            clientName: 'Procedural Islands',
+            highlighted: false,
+            type: 'web',
+            className: 'island-background',
+            imgUrl: './images/islands.png',
+            text: [
+                `
+                <p>Procedural generation is something that has always interested me. Particularly the blend between crafted experiences and procedural generation. I've had some experience using the Unity game engine to craft little procedural planets.</p>
+                <p>I was really keen on taking this concept to the browser and trying my hand at a few techniques using ThreeJS.</p>
+                <p>I made use of perlin.js to generate a number of different noise textures which were merged together to build a heightmap.
+                I then translated this heightmap into geometry and used a custom shader with some simple rules such as height or slope angle to paint the terrain with some simple colours to represent rock or grass.</p>
+                <p>One element I particularly loved was generating new islands by hitting spacebar and watching the islands blend between the different states. This was done by capturing the height data of both states then blending between them over time. Since the colouring was calculated by the shader, this gave a nice effect during the blend.</p>
+                <p>Link: <a href="https://jm-proc-islands.azurewebsites.net/">https://jm-proc-islands.azurewebsites.net/</a></p>
+                <p>Github: <a href="https://github.com/MacDoland/js-procedural-island">https://github.com/MacDoland/js-procedural-island</a></p>
+                `
+            ]
+
+        },
+        {
             id: 'garden',
             title: 'In the garden',
             type: 'web',
@@ -380,28 +401,6 @@ export default {
             ]
         },
         { id: 'plant', title: 'Potted plant', type: 'sketchfab', src: 'https://sketchfab.com/models/e92dd6ae7eb242018642bb40a91e744e/embed?autospin=0.2&amp;autostart=0&amp;transparent=0' },
-        {
-            id: 'island',
-            title: 'Procedural Islands',
-            clientName: 'Procedural Islands',
-            highlighted: false,
-            type: 'web',
-            className: 'island-background',
-            imgUrl: './images/islands.png',
-            overlayContent: `
-                <iframe src="./proc-islands"></iframe>
-            `,
-            text: [
-                `
-                <p>Procedural generation is something that has always interested me. Particularly the blend between crafted experiences and procedural generation. I've had some experience using the Unity game engine to craft little procedural planets.</p>
-                <p>I was really keen on taking this concept to the browser and trying my hand at a few techniques using ThreeJS.</p>
-                <p>I made use of perlin.js to generate a number of different noise textures which were merged together to build a heightmap.
-                I then translated this heightmap into geometry and used a custom shader with some simple rules such as height or slope angle to paint the terrain with some simple colours to represent rock or grass.</p>
-                <p>One element I particularly loved was generating new islands by hitting spacebar and watching the islands blend between the different states. This was done by capturing the height data of both states then blending between them over time. Since the colouring was calculated by the shader, this gave a nice effect during the blend.
-                `
-            ]
-
-        },
         { id: 'pila', title: 'Pila', type: 'sketchfab', src: 'https://sketchfab.com/models/ace7d3e35fea473599e10d2c62e7ab56/embed?autospin=0.2&amp;preload=1&amp;transparent=0' },
         {
             id: 'landscape',
