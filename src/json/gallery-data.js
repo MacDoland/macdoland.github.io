@@ -342,15 +342,15 @@ export default {
                 <div class="c-overlay__image ghost-background"></div>
             `,
             text: [
-                `Ghost train builder was a side project we worked on for a few months leading up to Halloween. 
+                `<p>Ghost train builder was a side project we worked on for a few months leading up to Halloween. 
                 At the time we were keen to explore the Aframe framework and came up with this idea of a user being able to customise their own Ghost train ride.
-                My responsibilities on the project included building 3D models for the rooms, rides and monsters but also a lot of the JavaScript to make the cart follow its course.`,
-                `A few years prior to this project I had worked on another side project to allow for the setup of simple scenes in ThreeJS through AngularJS directives. 
-                So it was refreshing to use a framework that was developed along the same ideals. Because models could be defined by HTML, this allowed anyone on the team regardless of 3D experience to manipulate the levels.`,
-                `The core idea behind this was to uv unwrap all the building blocks onto a single texture and then swap these textures out to skin each room dynamically. The user had limited choices on lighting, theme and the monsters that would pop up.`,
-                `Featured in net magazine issue 291 April 2017`,
-                `Relevant technologies: <br/> <ul><li>Vue.js</li><li>Aframe</li><li>Three.js</li></ul>`,
-                `<a href="http://ghosttrainbuilder.com/">http://ghosttrainbuilder.com/</a>`
+                My responsibilities on the project included building 3D models for the rooms, rides and monsters but also a lot of the JavaScript to make the cart follow its course.</p>
+                <p>A few years prior to this project I had worked on another side project to allow for the setup of simple scenes in ThreeJS through AngularJS directives. 
+                So it was refreshing to use a framework that was developed along the same ideals. Because models could be defined by HTML, this allowed anyone on the team regardless of 3D experience to manipulate the levels.</p>
+                <p>The core idea behind this was to uv unwrap all the building blocks onto a single texture and then swap these textures out to skin each room dynamically. The user had limited choices on lighting, theme and the monsters that would pop up.</p>
+                <p>Featured in net magazine issue 291 April 2017</p>
+                <p>Relevant technologies: <br/> <ul><li>Vue.js</li><li>Aframe</li><li>Three.js</li></ul></p>
+                <p><a href="http://ghosttrainbuilder.com/">http://ghosttrainbuilder.com/</a></p>`
 
             ]
         },
@@ -489,9 +489,19 @@ export default {
             clientName: 'Game of life',
             title: 'Coding exercise: Game Of Life',
             type: 'web',
-            className: 'game-of-life',
+            className: 'game-of-life-gif',
             imgUrl: './images/rl-game-of-life.png',
-            overlayContent: '<div class="c-overlay__image game-of-life-gif"></div>'
+            overlayContent: '<div class="c-overlay__image game-of-life-gif"></div>',
+            text: [
+                `
+                    <p></p>
+                    <p>In feburary 2018 I set a challenge to the team to build an interactive project in collaborative isolation. Each entrant was given a number of isolated problems to solve that once combined with other peoples pieces put together to solve the solution.</p>
+                    <p>The tasks ranged in complexity and the entrants were given the option to indicate how much involvement they wanted. This mean that most people were able to contribute, whereas in the past they may have resisted due to the levels of commitement.</p> 
+                    <p>Often having completed their task the entrant would ask for another, and so there were a number of duplicate tasks, but that was fine. This challenge hinged on setting out well described requirements, and each task was sent to individuals in secret.</p>
+                    <p>Once all the entries were in we place the functions in a folder, and due to carefully selected naming and exporting of the functions we revealed the final solution, which was the game of life.</p>
+                    <p><a href="https://github.com/MacDoland/realise-feb-2018-challenge">https://github.com/MacDoland/realise-feb-2018-challenge</a></p>
+                `
+            ]
         },
         {
             id: 'scottish-widows',
