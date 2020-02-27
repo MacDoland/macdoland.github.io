@@ -45,6 +45,35 @@ export default {
             ]
         },
         {
+            id: 'pokedex',
+            title: 'Create React App: Pokedex',
+            type: 'web',
+            className: 'pokedex-background',
+            imgUrl: './images/pokedex.png',
+            clientName: 'Pokédex',
+            highlighted: false,
+            text: [
+                `
+                    <p>To refresh my memory on React I spent a few nights building a little Create React App using an interesting Pokemon API that I stumbled upon.</p>
+                    <p>The API is rate limited to 100 request per minute and you can only pull down one Pokemons data at a time. 
+                    This proved to be quite laborious to request client side. So I built a nodeJS API middle layer that queued up requests using a throttled queue and cached mapped results into a local JSON file for quick access.  </p>
+                    <p>The app itself is a standard Create React App with redux managing the state. I had a lot of fun building this out, a few highlights include:</p>
+                    <ul>
+                    <li>A tree data structure for fast name lookups for pokemon</li>
+                    <li>A generic merge sort.</li>
+                    <li>Use of an Intersection Observer high order component to only render images currently in the view port.</li>
+
+                    <p>With more time I would love to improve the performance of rendering 807 cards!</p>
+
+                    <p>Link: <a href="https://jm-pokedex.azurewebsites.net/">https://jm-pokedex.azurewebsites.net/</a></p>
+                    <p>Github: <a href="https://github.com/MacDoland/pokedex">https://github.com/MacDoland/pokedex/</a></p>
+                    <p>PokeAPI: <a href="https://pokeapi.co/">https://pokeapi.co/</a></p>
+                
+                `
+            ],
+
+        },
+        {
             id: 'garden',
             title: 'In the garden',
             type: 'web',
@@ -267,23 +296,6 @@ export default {
         },
 
         {
-            id: 'royal-london',
-            title: 'Royal London',
-            clientName: 'Royal London',
-            type: 'web',
-            className: 'royal-london-background',
-            imgUrl: './images/royal-london.png',
-            text: [
-                `
-                <p>I spent the first 14 months of my employment with Realise on site at Royal Londons offices. There I was part of a team of developers working on Royal Londons rebranding. One particular highlight was the navigation system which consisted of a grid of boxes of various sizes with interesting CSS transitions. 
-                The sub items needed to grow and expand to cover the parent boxes in a pleasing manner.</p>
-                <p>Relevant technologies: Bootstrap 3, Angular 1.x </p>
-                <p>Link: <a href="https://www.royallondon.com/">https://www.royallondon.com/<a/></p>
-                `
-            ]
-
-        },
-        {
             id: 'syfy',
             title: 'Syfy Channel 20th Anniversary game',
             clientName: 'Syfy',
@@ -300,6 +312,24 @@ export default {
                     We also had to do a large amount of device testing and iteration to make sure it was responsive across all browsers and devices.</p>
                 `
             ]
+        },
+        
+        {
+            id: 'royal-london',
+            title: 'Royal London',
+            clientName: 'Royal London',
+            type: 'web',
+            className: 'royal-london-background',
+            imgUrl: './images/royal-london.png',
+            text: [
+                `
+                <p>I spent the first 14 months of my employment with Realise on site at Royal Londons offices. There I was part of a team of developers working on Royal Londons rebranding. One particular highlight was the navigation system which consisted of a grid of boxes of various sizes with interesting CSS transitions. 
+                The sub items needed to grow and expand to cover the parent boxes in a pleasing manner.</p>
+                <p>Relevant technologies: Bootstrap 3, Angular 1.x </p>
+                <p>Link: <a href="https://www.royallondon.com/">https://www.royallondon.com/<a/></p>
+                `
+            ]
+
         },
         {
             id: 'ghost',
