@@ -120,6 +120,16 @@
   background-position: center top;
 }
 
+.no-webp .unearthed-use-background {
+  background-image: url("/images/unearthed-use.jpg");
+  background-position: center top;
+}
+
+.webp .unearthed-use-background {
+  background-image: url("/images/unearthed-use.webp");
+  background-position: center top;
+}
+
 .no-webp .funeral-background {
   background-image: url("/images/funeral-mapper.png");
   background-position: center top;

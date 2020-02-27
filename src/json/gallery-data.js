@@ -286,7 +286,7 @@ export default {
             clientName: 'BBC',
             type: 'web',
             className: 'unearthed-background',
-            imgUrl: './images/unearthed.jpg',
+            imgUrl: './images/unearthed-use.jpg',
             highlighted: true,
             text: [
                 `
