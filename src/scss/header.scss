@@ -47,8 +47,8 @@
     border-radius: 128px;
     border: 2px solid map-get($colors, "tertiary");
     overflow: hidden;
-    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-    filter: grayscale(100%);
+    // -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    // filter: grayscale(100%);
     position: relative;
     z-index: 0;
 

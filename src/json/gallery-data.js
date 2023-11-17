@@ -1,6 +1,75 @@
 export default {
     tiles: [
         {
+            id: 'bella',
+            title: 'Bella & Duke',
+            clientName: 'Bella & Duke',
+            type: 'web',
+            className: 'bella-background',
+            imgUrl: './images/bella.png',
+            highlighted: true,
+            text: [
+                `
+                <p>After completing my work with LBG, I was invited to become Tech Lead for Bella & Duke, a smaller client. B&D was looking to transform their business from a raw pet food supplier to a customer-centric company dedicated to pet wellness.</p>
+
+                <p>I created a technical options paper that analysed all requirements from the service map and new designs. I proposed moving the company to a more modern framework and the decision was made to build the new site with Next.js using a standalone component library using Material UI and displayed in Storybook.</p>
+
+                <p>I supported the initial build and devops as well as leading a small team, including a client Engineer with zero React experience.</p>
+
+                <p>My role included:
+                 <ul>
+                    <li>Setting the technical direction for the project</li>
+                    <li>Implementation of a component library</li>
+                    <li>Planning and implementing devops pipelines</li>
+                    <li>Shared responsibility for delivering each sprint of work</li>
+                    <li>Introducing testing to the development workflow</li>
+                    <li>Championing best practice</li>
+                    <li>Code reviews</li>
+                    <li>Paired programming</li>
+                    <li>Upskilling client developer on react/nextjs</li>
+                 </ul>
+                </p>
+                <br/><br/>
+                `
+
+            ]
+        },
+        {
+            id: 'lbg',
+            title: 'Lloyds Banking Group',
+            clientName: 'Lloyds Banking Group',
+            type: 'web',
+            className: 'lbg-background',
+            imgUrl: './images/lbg.png',
+            highlighted: true,
+            text: [
+                `
+                <p>Shortly after starting with AND Digital, I was assigned to lead one of the Feature Teams within one of the bank's Digital “Labs:. I initially came to AND as a Senior Developer, but there was an immediate need for a Tech Lead on their first major Client. I volunteered for the position, leveraging my experience in leadership.</p>
+
+                <p>For two years, I led team "Ganon" in the creation of a set of core microservices and supporting React front ends for the banks pension platform. I liaised with bank Stakeholders, Architects and other Engineering Leads to help shape the technical landscape. One of my key contributions was assisting them to develop a security policy and process around package vulnerabilities.</p>
+                
+                <p>I adopted a Servant Leadership approach with my team, prioritising their growth and well-being. I was very invested in the personal and professional development of my fellow engineers, supporting and enabling them.</p>
+                 
+                <p>My role included:
+                 <ul>
+                    <li>Shared responsibility for delivering each sprint of work</li>
+                    <li>Championing best practice</li>
+                    <li>Code reviews</li>
+                    <li>Paired programming</li>
+                    <li>Facilitating and attending technical leadership and architecture forums</li>
+                    <li>Supporting the growth of engineers in my team and lab</li>
+                    <li>Improving security and devops practices</li>
+                    <li>Improving testing with E2E and Contract tests</li>
+                    <li>Liasing with different labs and microservice consumers</li>
+                    <li>Coaching other engineers in AND</li>
+                 </ul>
+                </p>
+                <br/><br/>
+                `
+
+            ]
+        },
+        {
             id: 'lexus',
             title: 'Lexus',
             clientName: 'Lexus',
@@ -88,84 +157,16 @@ export default {
                 <p>I made use of perlin.js to generate a number of different noise textures which were merged together to build a heightmap.
                 I then translated this heightmap into geometry and used a custom shader with some simple rules such as height or slope angle to paint the terrain with some simple colours to represent rock or grass.</p>
                 <p>One element I particularly loved was generating new islands by hitting spacebar and watching the islands blend between the different states. This was done by capturing the height data of both states then blending between them over time. Since the colouring was calculated by the shader, this gave a nice effect during the blend.</p>
-                <p>Link: <a href="https://jm-proc-islands.azurewebsites.net/">https://jm-proc-islands.azurewebsites.net/</a></p>
                 <p>Github: <a href="https://github.com/MacDoland/js-procedural-island">https://github.com/MacDoland/js-procedural-island</a></p>
                 `
-            ]
-
-        },
-        {
-            id: 'garden',
-            title: 'In the garden',
-            type: 'web',
-            className: 'garden-background',
-            imgUrl: './images/garden-background.jpg',
-            clientName: 'In the garden',
-            highlighted: false,
+            ],
             overlayContent: `
-                <iframe src="https://sketchfab.com/models/75431eb321164f9689f6f98ef317f34f/embed?autospin=0.2&amp;preload=1&amp;transparent=0"></iframe>
-            `,
-            text: [
-                `
-                <p>This piece of work close to my heart. A side project I worked on last year that went through many months of iteration. 
-                I was looking for some practice on building out environments so decided to impose a size limition to that of a garden to help with scope and focus.</p>
-    
-                <p>I created a reference board with PureRef of all the various garden related objects that interested me. I was particularly drawn to outhouse conversions and that quickly became the main focus.</p>
-    
-                <p>I like the idea of every scene having a story behind it and for this I settled on the thought that the garden belonged to an elderly man who was spending his years of retirement building bird houses.</p>
-    
-                <p>The scene was almost entirely modelled and textured in Blender with the exception of some foliage shapes being produced using Photoshop. 
-                This was built prior to the official release of Blender 2.8, but I did download a beta version to help combine UV maps for baking. 
-                I baked the entire scene into textures for uploading to Sketchfab where it was staff picked. A mechanism where staff can feature particular pieces of work.</p>
-    
-                <p>
-                Some work in progress renders can be found here on artstation: 
-                <a href="https://www.artstation.com/artwork/2xOmLy">https://www.artstation.com/artwork/2xOmLy</a>
-                </p>
-    
-                <p>
-                Sketchfab: 
-                <a href="https://sketchfab.com/3d-models/in-the-garden-75431eb321164f9689f6f98ef317f34f">https://sketchfab.com/3d-models/in-the-garden-75431eb321164f9689f6f98ef317f34f</a>
-                </p>
-                
-                
-                `
-            ]
+            
+            <iframe src="https://player.vimeo.com/video/885683570?h=ae49c8a832" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 
-        },
-        {
-            id: 'egg-hunt',
-            title: 'WIP Project Egg Hunt',
-            type: 'web',
-            className: 'hunt-background',
-            imgUrl: './images/hunt.png',
-            clientName: 'Project Egg Hunt',
-            highlighted: false,
-            overlayContent: `
-                <iframe src="http://project-egg-hunt.azurewebsites.net/"></iframe>
-            `,
-            text: [
-                `
-                    <p>
-                    Project Egg is a side initiative currently being worked on for Easter 2020.
-                    The core idea behind it was to allow for the painting of eggs in the browser and then supplying the painted eggs through an API for various experiences and games to make use of.
-                    </p>
+            
+            `
 
-                    <p>This piece is one such experience. It is a 3D egg hunt game where a series of random painted egg textures are retrieved from the API and used to decorate eggs hidden around the scene.
-                    The game then becomes trying to find these eggs by rotating and paning the camera around the world to find them. </p>
-
-                    <p> All models and textures thus far have been created using Blender. Using ThreeJS I am importing the models and baked textures and rendering them to the canvas when the scene needs to redraw.
-                    </p>
-
-                    <p>This is very much work in progress and is currently hosted in Azure on a free tier web app, so may be sleeping!</p>
-
-                    <p>
-                    Relevant technologies: Blender, ThreeJS</p>
-
-                    <p>Link: <a href="http://project-egg-hunt.azurewebsites.net/">http://project-egg-hunt.azurewebsites.net/</a></p>
-                
-                `
-            ]
         },
         {
             id: 'sailgp',
@@ -375,7 +376,6 @@ export default {
 
             ]
         },
-        { id: 'bird', title: 'Steller\'s Jay', type: 'sketchfab', src: 'https://sketchfab.com/models/9cfe5bd6f132405fbf48bd004fa688bd/embed?autospin=0.2&amp;preload=1&amp;transparent=0' },
         {
             id: 'advent',
             title: 'Team Advent Calendar',
@@ -400,38 +400,7 @@ export default {
                 `
             ]
         },
-        { id: 'plant', title: 'Potted plant', type: 'sketchfab', src: 'https://sketchfab.com/models/e92dd6ae7eb242018642bb40a91e744e/embed?autospin=0.2&amp;autostart=0&amp;transparent=0' },
-        { id: 'pila', title: 'Pila', type: 'sketchfab', src: 'https://sketchfab.com/models/ace7d3e35fea473599e10d2c62e7ab56/embed?autospin=0.2&amp;preload=1&amp;transparent=0' },
-        {
-            id: 'landscape',
-            title: 'Low Poly Environment',
-            type: 'web',
-            clientName: 'Green valley',
-            imgUrl: './images/pila-background.jpg',
-            className: 'pila-background',
-            text: [
-                `
-                <p>This was a challenge that I set myself to push my experience in building out environments. 
-                I was inspired by works of art that looked incredibly complex but when analysed closer you could see that actually the scene was made up of a very small number of unique assets.</p>
 
-                <p>The entire scene was built in Blender with mostly simple low poly style objects. I made heavy use of Blenders hair particle system to place all the trees and individual small objects like stones and grass.
-                    This was a huge time saver, I just made sure to mask the areas of generation by grouping together the vertices and passing those through to the particle system.
-                </p>
-
-                <p>Relevant technologies: Blender </p>
-                <p>Link: <a href="https://www.artstation.com/artwork/oGLJO">https://www.artstation.com/artwork/oGLJO<a/></p>
-                `
-            ]
-        },
-        { id: 'weasel', title: 'Weasel character art', type: 'sketchfab', src: 'https://sketchfab.com/models/a995319e79e84c6a8df1ed8e5d3a58b0/embed?autospin=0.2&amp;preload=1&amp;transparent=0' },
-        {
-            id: 'rice',
-            title: 'Rice ball illustration',
-            type: 'web',
-            className: 'rice-background',
-            imgUrl: './images/joe-mcdowall-itadakimasu.jpg',
-            clientName: '2D Illustration'
-        },
         {
             id: 'gea',
             title: 'Halifax: Giving Extra Awards',

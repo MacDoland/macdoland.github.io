@@ -82,6 +82,24 @@
   background-size: cover;
 }
 
+.no-webp .bella-background {
+  background-image: url("/images/bella.png");
+}
+
+
+
+.webp .bella-background {
+  background-image: url("/images/bella.webp");
+}
+
+.webp .lbg-background {
+  background-image: url("/images/lbg.webp");
+}
+
+.no-webp .lbg-background {
+  background-image: url("/images/lbg.png");
+}
+
 .no-webp .pila-background {
   background-image: url("/images/pila-background.jpg");
 }
@@ -218,14 +236,14 @@
 }
 
 .no-webp .profile-background::after {
-  background-image: url("/images/profile.png");
+  background-image: url("/images/me.png");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
 }
 
 .webp .profile-background::after {
-  background-image: url("/images/profile.webp");
+  background-image: url("/images/me.webp");
   background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
